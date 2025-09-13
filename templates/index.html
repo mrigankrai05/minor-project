@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Review Insights Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content { flex-grow: 1; }
+        .card-title { font-size: 1.125rem; font-weight: 600; color: #1f2937; }
+        .chart-stats {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background-color: #f9fafb;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            color: #374151;
+            border: 1px solid #f3f4f6;
+        }
+        .chart-description { font-size: 0.875rem; color: #4b5563; margin-top: 0.75rem; }
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #111827;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #6d28d9;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="container mx-auto px-4 py-8">
+        
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-slate-900">Smart Buisness Insights Dashboard</h1>
+            <p class="mt-2 text-lg text-slate-600">From historical analysis to future forecasting.</p>
+        </header>
+
+        <div class="card p-6 max-w-2xl mx-auto mb-10">
+            <form id="upload-form" class="flex flex-col sm:flex-row items-center gap-4">
+                <div class="w-full">
+                    <label for="file-upload" class="sr-only">Choose file</label>
+                    <input type="file" id="file-upload" name="file" accept=".csv" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 transition-colors" required>
+                </div>
+                <button type="submit" id="analyze-btn" class="w-full sm:w-auto bg-violet-600 text-white font-bold py-2 px-6 rounded-full hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition-transform transform hover:scale-105">
+                    Analyze
+                </button>
+            </form>
+            <div id="loader" class="hidden text-center mt-4">
+                <div class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-violet-600 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status"></div>
+                <p class="text-violet-700 font-semibold mt-2">Training models and generating insights... this may take a moment.</p>
+            </div>
+        </div>
+
+        <div id="results" class="hidden">
+            <div id="error-message" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg relative mb-6" role="alert">
+                <strong class="font-bold">Error:</strong>
+                <span class="block sm:inline" id="error-text"></span>
+            </div>
+
+            <div id="insights-grid">
+                <h2 class="section-title">Historical Analysis</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="card p-6">
+                        <div class="card-content">
+                            <h2 class="card-title">Sentiment Analysis</h2>
+                            <div class="flex justify-center mt-4"><img id="sentiment-chart" src="" alt="Sentiment Pie Chart"></div>
+                            <div id="sentiment-stats" class="chart-stats"></div>
+                            <p class="chart-description">Breaks down reviews for an overview of customer satisfaction.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6">
+                        <div class="card-content">
+                            <h2 class="card-title">Key Market Trends (from Negative Reviews)</h2>
+                            <ul id="trends-list" class="mt-4 space-y-2"></ul>
+                            <div id="trends-stats" class="chart-stats"></div>
+                            <p class="chart-description">Highlights recurring issues from negative feedback that require attention.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 col-span-1 lg:col-span-2">
+                        <div class="card-content">
+                            <h2 class="card-title">Profit Over Time</h2>
+                            <div class="mt-4"><img id="profit-time-chart" src="" alt="Profit Over Time Line Chart"></div>
+                            <div id="profit-stats" class="chart-stats"></div>
+                            <p class="chart-description">Tracks monthly net profit to identify trends and measure financial growth.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6">
+                        <div class="card-content">
+                            <h2 class="card-title">Sales by Region</h2>
+                            <div class="mt-4"><img id="sales-region-chart" src="" alt="Sales by Region Bar Chart"></div>
+                            <div id="region-stats" class="chart-stats"></div>
+                            <p class="chart-description">Shows units sold by region to optimize sales strategies.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6">
+                        <div class="card-content">
+                            <h2 class="card-title">Performance by Product Category</h2>
+                            <div class="mt-4"><img id="category-performance-chart" src="" alt="Category Performance Bar Chart"></div>
+                            <div id="category-stats" class="chart-stats"></div>
+                            <p class="chart-description">Compares profit by category to identify top performers.</p>
+                        </div>
+                    </div>
+                    <div class="card p-6 col-span-1 lg:col-span-2">
+                        <div class="card-content">
+                            <h2 class="card-title">Rating vs. Predicted Sentiment</h2>
+                            <div class="flex justify-center mt-4"><img id="rating-sentiment-chart" src="" alt="Rating vs Sentiment Heatmap"></div>
+                            <div id="rating-stats" class="chart-stats"></div>
+                            <p class="chart-description">Compares star ratings to predicted text sentiment to reveal discrepancies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: Predictions Section -->
+                <div class="mt-12">
+                    <h2 class="section-title">Future Predictions</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="card p-6 col-span-1 lg:col-span-2">
+                            <div class="card-content">
+                                <h2 class="card-title">Net Profit Forecast (Next 6 Months)</h2>
+                                <div class="mt-4"><img id="profit-forecast-chart" src="" alt="Profit Forecast Chart"></div>
+                                <div id="profit-forecast-stats" class="chart-stats"></div>
+                                <p class="chart-description">Projects future net profit based on a linear regression of historical performance.</p>
+                            </div>
+                        </div>
+                        <div class="card p-6">
+                            <div class="card-content">
+                                <h2 class="card-title">Sales Volume Forecast (Next 6 Months)</h2>
+                                <div class="mt-4"><img id="sales-forecast-chart" src="" alt="Sales Forecast Chart"></div>
+                                <div id="sales-forecast-stats" class="chart-stats"></div>
+                                <p class="chart-description">Projects future unit sales to help with inventory and demand planning.</p>
+                            </div>
+                        </div>
+                        <div class="card p-6">
+                            <div class="card-content">
+                                <h2 class="card-title">Sentiment Trend Forecast (Next 6 Months)</h2>
+                                <div class="mt-4"><img id="sentiment-trend-chart" src="" alt="Sentiment Trend Chart"></div>
+                                <div id="sentiment-trend-stats" class="chart-stats"></div>
+                                <p class="chart-description">Forecasts the trend of positive customer sentiment to predict future brand perception.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const fileInput = document.getElementById('file-upload');
+            const resultsDiv = document.getElementById('results');
+            const loader = document.getElementById('loader');
+            const errorMessageDiv = document.getElementById('error-message');
+            const insightsGrid = document.getElementById('insights-grid');
+            const analyzeBtn = document.getElementById('analyze-btn');
+
+            if (!fileInput.files.length) { return; }
+
+            loader.classList.remove('hidden');
+            resultsDiv.classList.add('hidden');
+            errorMessageDiv.classList.add('hidden');
+            analyzeBtn.disabled = true;
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('/analyze', { method: 'POST', body: formData });
+                const data = await response.json();
+                console.log("Data received from backend:", data);
+
+                if (!response.ok) { throw new Error(data.error || 'An unknown error occurred.'); }
+                if (!data.charts || !data.summary_stats) { throw new Error("Incomplete data received from server."); }
+
+                // Populate charts
+                const charts = data.charts;
+                document.getElementById('sentiment-chart').src = 'data:image/png;base64,' + charts.sentiment_pie;
+                document.getElementById('profit-time-chart').src = 'data:image/png;base64,' + charts.profit_time;
+                document.getElementById('sales-region-chart').src = 'data:image/png;base64,' + charts.sales_region;
+                document.getElementById('rating-sentiment-chart').src = 'data:image/png;base64,' + charts.rating_sentiment;
+                document.getElementById('category-performance-chart').src = 'data:image/png;base64,' + charts.category_performance;
+                // New forecast charts
+                document.getElementById('profit-forecast-chart').src = 'data:image/png;base64,' + charts.profit_forecast;
+                document.getElementById('sales-forecast-chart').src = 'data:image/png;base64,' + charts.sales_forecast;
+                document.getElementById('sentiment-trend-chart').src = 'data:image/png;base64,' + charts.sentiment_trend;
+                
+                // Populate trends
+                const trendsList = document.getElementById('trends-list');
+                trendsList.innerHTML = '';
+                if (data.trends && data.trends.length > 0) {
+                    data.trends.forEach(trend => {
+                        const li = document.createElement('li');
+                        li.className = 'bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full';
+                        li.textContent = trend;
+                        trendsList.appendChild(li);
+                    });
+                } else {
+                    trendsList.innerHTML = '<li class="text-slate-500">No significant negative trends found.</li>';
+                }
+                
+                // Populate summary stats
+                const stats = data.summary_stats;
+                
+                if (stats.sentiment) {
+                    let sentimentHTML = `<p><span class="font-semibold text-green-600">${stats.sentiment.positive_pct} Positive</span> (${stats.sentiment.positive_count} reviews)</p><p><span class="font-semibold text-red-600">${stats.sentiment.negative_pct} Negative</span> (${stats.sentiment.negative_count} reviews)</p>`;
+                    if (stats.sentiment.neutral_count > 0) { sentimentHTML += `<p><span class="font-semibold text-slate-600">${stats.sentiment.neutral_pct} Neutral</span> (${stats.sentiment.neutral_count} reviews)</p>`; }
+                    sentimentHTML += `<p class="mt-1 text-xs text-slate-500">Based on ${stats.sentiment.total_reviews} total reviews.</p>`;
+                    document.getElementById('sentiment-stats').innerHTML = sentimentHTML;
+                }
+
+                if(stats.trends) { document.getElementById('trends-stats').innerHTML = `Analyzed from negative reviews.`; }
+                if(stats.profit) { document.getElementById('profit-stats').innerHTML = `<p><strong>Total Net Profit:</strong> ${stats.profit.total_profit}</p><p><strong>Avg. Monthly Profit:</strong> ${stats.profit.avg_monthly_profit}</p>`; }
+                if(stats.region) { document.getElementById('region-stats').innerHTML = `<p><strong>Top Region:</strong> ${stats.region.top_region}</p><p><strong>Units Sold (Top Region):</strong> ${stats.region.top_region_sales}</p>`; }
+                if(stats.category) { document.getElementById('category-stats').innerHTML = `<p><strong>Most Profitable:</strong> ${stats.category.top_category}</p><p><strong>Profit (Top Category):</strong> ${stats.category.top_category_profit}</p>`; }
+                if(stats.rating){ document.getElementById('rating-stats').innerHTML = `<strong>Average Customer Rating:</strong> <span class="text-amber-500 font-bold">${stats.rating.avg_rating}</span>`; }
+                
+                // New prediction stats
+                if (stats.predictions) {
+                    document.getElementById('profit-forecast-stats').innerHTML = `<strong>Predicted Profit Next Month:</strong> <span class="text-green-600 font-bold">${stats.predictions.next_month_profit}</span>`;
+                    document.getElementById('sales-forecast-stats').innerHTML = `<strong>Predicted Sales Next Month:</strong> <span class="text-blue-600 font-bold">${stats.predictions.next_month_sales} units</span>`;
+                    document.getElementById('sentiment-trend-stats').innerHTML = `<strong>Predicted Sentiment Next Month:</strong> <span class="text-orange-500 font-bold">${stats.predictions.next_month_sentiment}</span>`;
+                }
+
+                resultsDiv.classList.remove('hidden');
+
+            } catch (error) {
+                console.error("An error occurred in the fetch call:", error);
+                document.getElementById('error-text').textContent = error.message;
+                errorMessageDiv.classList.remove('hidden');
+                insightsGrid.classList.add('hidden'); // Hide the grid on error
+                resultsDiv.classList.remove('hidden');
+            } finally {
+                loader.classList.add('hidden');
+                analyzeBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
+
