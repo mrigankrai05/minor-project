@@ -1,0 +1,451 @@
+product_name,product_category,review,rating,net_profit,units_sold,purchase_date,region
+Robot Vacuum,Home Goods,Stopped working after a few months.,5,51,157,2024/07/01,South
+Gaming Chair,Furniture,Loving it so far!,5,52,76,2024/07/02,East
+Air Purifier,Home Goods,Not worth the money.,4,58,115,2024/07/03,West
+Blender,Kitchen,"Decent for the price, could be better.",1,63,79,2024/07/04,North
+4K Action Camera,Electronics,Battery life could be longer.,2,62,103,2024/07/05,South
+Wireless Earbuds,Audio,Exceeded my expectations!,2,60,179,2024/07/06,West
+Blender,Kitchen,Not worth the money.,2,54,86,2024/07/07,West
+Robot Vacuum,Home Goods,Very sturdy and reliable.,3,64,92,2024/07/08,South
+Standing Desk,Furniture,Simple and effective.,2,65,179,2024/07/09,North
+Electric Kettle,Kitchen,Exceeded my expectations!,5,78,198,2024/07/10,North
+Blender,Kitchen,Stopped working after a few months.,3,87,61,2024/07/11,East
+Standing Desk,Furniture,Not worth the money.,2,86,113,2024/07/12,South
+Air Purifier,Home Goods,Battery life could be longer.,2,87,81,2024/07/13,South
+Electric Kettle,Kitchen,Very sturdy and reliable.,4,84,186,2024/07/14,South
+Smartwatch,Wearables,Not worth the money.,3,89,68,2024/07/15,North
+Laptop,Electronics,"Excellent quality, highly recommend.",4,90,93,2024/07/16,South
+Smartwatch,Wearables,Not worth the money.,5,103,177,2024/07/17,North
+Wireless Earbuds,Audio,"Decent for the price, could be better.",1,110,147,2024/07/18,South
+Standing Desk,Furniture,"Excellent quality, highly recommend.",1,107,24,2024/07/19,East
+Electric Kettle,Kitchen,Loving it so far!,4,118,119,2024/07/20,East
+Electric Kettle,Kitchen,Not worth the money.,4,121,112,2024/07/21,East
+Laptop,Electronics,Sound quality is amazing.,4,129,160,2024/07/22,South
+Wireless Earbuds,Audio,Not worth the money.,4,127,116,2024/07/23,West
+4K Action Camera,Electronics,"Decent for the price, could be better.",3,131,143,2024/07/24,North
+Gaming Chair,Furniture,Loving it so far!,3,135,44,2024/07/25,South
+Laptop,Electronics,Simple and effective.,5,139,85,2024/07/26,West
+Robot Vacuum,Home Goods,Battery life could be longer.,5,142,144,2024/07/27,North
+Laptop,Electronics,"Excellent quality, highly recommend.",2,154,139,2024/07/28,North
+Air Purifier,Home Goods,Exceeded my expectations!,1,156,106,2024/07/29,North
+Robot Vacuum,Home Goods,Simple and effective.,3,161,78,2024/07/30,West
+4K Action Camera,Electronics,Exceeded my expectations!,5,158,66,2024/07/31,South
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",5,167,195,2024/08/01,South
+Wireless Earbuds,Audio,Sound quality is amazing.,4,173,90,2024/08/02,East
+Gaming Chair,Furniture,"Decent for the price, could be better.",2,166,48,2024/08/03,West
+Robot Vacuum,Home Goods,Very sturdy and reliable.,3,160,101,2024/08/04,South
+Gaming Chair,Furniture,Stopped working after a few months.,5,164,93,2024/08/05,East
+Smartwatch,Wearables,"Decent for the price, could be better.",1,157,76,2024/08/06,East
+Air Purifier,Home Goods,"Excellent quality, highly recommend.",4,170,131,2024/08/07,North
+Electric Kettle,Kitchen,Stopped working after a few months.,3,173,80,2024/08/08,East
+Air Purifier,Home Goods,Loving it so far!,1,174,39,2024/08/09,South
+Standing Desk,Furniture,Sound quality is amazing.,5,171,24,2024/08/10,East
+Blender,Kitchen,Battery life could be longer.,3,181,145,2024/08/11,North
+Electric Kettle,Kitchen,"Excellent quality, highly recommend.",3,186,123,2024/08/12,West
+Laptop,Electronics,Sound quality is amazing.,1,197,133,2024/08/13,South
+Air Purifier,Home Goods,Stopped working after a few months.,4,200,192,2024/08/14,East
+Wireless Earbuds,Audio,Not worth the money.,4,199,126,2024/08/15,West
+Standing Desk,Furniture,Simple and effective.,3,208,32,2024/08/16,South
+Air Purifier,Home Goods,"Decent for the price, could be better.",5,204,141,2024/08/17,North
+Smartwatch,Wearables,"Decent for the price, could be better.",4,210,129,2024/08/18,West
+Electric Kettle,Kitchen,Simple and effective.,5,203,62,2024/08/19,East
+Standing Desk,Furniture,Stopped working after a few months.,5,207,69,2024/08/20,East
+Air Purifier,Home Goods,Stopped working after a few months.,2,206,120,2024/08/21,West
+Wireless Earbuds,Audio,Simple and effective.,4,213,74,2024/08/22,North
+Electric Kettle,Kitchen,Simple and effective.,4,204,21,2024/08/23,West
+Gaming Chair,Furniture,Loving it so far!,5,200,134,2024/08/24,South
+Wireless Earbuds,Audio,Not worth the money.,2,189,163,2024/08/25,North
+Air Purifier,Home Goods,Not worth the money.,4,185,157,2024/08/26,West
+Standing Desk,Furniture,Battery life could be longer.,5,187,146,2024/08/27,West
+Standing Desk,Furniture,"Excellent quality, highly recommend.",2,174,154,2024/08/28,West
+Gaming Chair,Furniture,Very sturdy and reliable.,1,175,40,2024/08/29,West
+Wireless Earbuds,Audio,Battery life could be longer.,3,182,41,2024/08/30,North
+Laptop,Electronics,Not worth the money.,1,174,129,2024/08/31,East
+Air Purifier,Home Goods,Stopped working after a few months.,5,164,164,2024/09/01,South
+Blender,Kitchen,"Decent for the price, could be better.",4,161,71,2024/09/02,East
+4K Action Camera,Electronics,Sound quality is amazing.,5,162,50,2024/09/03,South
+Electric Kettle,Kitchen,Simple and effective.,5,150,30,2024/09/04,South
+Electric Kettle,Kitchen,Stopped working after a few months.,2,137,42,2024/09/05,West
+Robot Vacuum,Home Goods,Loving it so far!,4,128,82,2024/09/06,North
+Standing Desk,Furniture,Very sturdy and reliable.,1,123,20,2024/09/07,East
+Air Purifier,Home Goods,Loving it so far!,5,120,170,2024/09/08,South
+Laptop,Electronics,Battery life could be longer.,3,108,120,2024/09/09,South
+Laptop,Electronics,Stopped working after a few months.,1,104,130,2024/09/10,South
+Air Purifier,Home Goods,Sound quality is amazing.,3,106,135,2024/09/11,West
+Air Purifier,Home Goods,Loving it so far!,5,103,190,2024/09/12,South
+Blender,Kitchen,Battery life could be longer.,2,103,135,2024/09/13,East
+Standing Desk,Furniture,"Excellent quality, highly recommend.",5,91,132,2024/09/14,South
+Laptop,Electronics,Sound quality is amazing.,1,83,118,2024/09/15,South
+Smartwatch,Wearables,"Decent for the price, could be better.",1,75,142,2024/09/16,South
+Smartwatch,Wearables,Very sturdy and reliable.,5,82,73,2024/09/17,East
+Wireless Earbuds,Audio,Battery life could be longer.,4,85,153,2024/09/18,South
+Blender,Kitchen,Loving it so far!,3,86,83,2024/09/19,West
+Gaming Chair,Furniture,Sound quality is amazing.,4,90,105,2024/09/20,North
+Air Purifier,Home Goods,Very sturdy and reliable.,4,82,53,2024/09/21,North
+Wireless Earbuds,Audio,"Excellent quality, highly recommend.",4,72,75,2024/09/22,North
+Blender,Kitchen,"Decent for the price, could be better.",5,71,22,2024/09/23,South
+Blender,Kitchen,Battery life could be longer.,3,73,42,2024/09/24,North
+Laptop,Electronics,"Decent for the price, could be better.",1,63,55,2024/09/25,North
+Laptop,Electronics,Exceeded my expectations!,2,64,77,2024/09/26,West
+Laptop,Electronics,Stopped working after a few months.,1,64,163,2024/09/27,West
+Air Purifier,Home Goods,Not worth the money.,5,56,180,2024/09/28,North
+Air Purifier,Home Goods,Simple and effective.,1,53,22,2024/09/29,South
+Laptop,Electronics,Sound quality is amazing.,1,40,185,2024/09/30,West
+4K Action Camera,Electronics,Not worth the money.,4,33,130,2024/10/01,East
+Air Purifier,Home Goods,Exceeded my expectations!,5,24,78,2024/10/02,North
+Smartwatch,Wearables,Sound quality is amazing.,1,12,21,2024/10/03,East
+Robot Vacuum,Home Goods,Stopped working after a few months.,1,19,153,2024/10/04,West
+Robot Vacuum,Home Goods,Battery life could be longer.,1,26,188,2024/10/05,West
+Wireless Earbuds,Audio,Not worth the money.,5,18,28,2024/10/06,East
+Air Purifier,Home Goods,Not worth the money.,4,11,122,2024/10/07,West
+Laptop,Electronics,Loving it so far!,5,25,31,2024/10/08,East
+Laptop,Electronics,Exceeded my expectations!,3,33,107,2024/10/09,East
+Air Purifier,Home Goods,Stopped working after a few months.,5,25,146,2024/10/10,West
+Gaming Chair,Furniture,"Excellent quality, highly recommend.",5,36,63,2024/10/11,West
+Laptop,Electronics,"Excellent quality, highly recommend.",3,29,150,2024/10/12,North
+Electric Kettle,Kitchen,Simple and effective.,2,27,58,2024/10/13,North
+4K Action Camera,Electronics,"Excellent quality, highly recommend.",2,29,72,2024/10/14,North
+Robot Vacuum,Home Goods,Stopped working after a few months.,4,36,94,2024/10/15,South
+Electric Kettle,Kitchen,Sound quality is amazing.,2,30,58,2024/10/16,East
+Blender,Kitchen,Sound quality is amazing.,3,32,153,2024/10/17,North
+Air Purifier,Home Goods,Loving it so far!,3,31,169,2024/10/18,West
+4K Action Camera,Electronics,"Decent for the price, could be better.",1,41,163,2024/10/19,South
+Smartwatch,Wearables,Loving it so far!,2,48,127,2024/10/20,West
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",4,55,108,2024/10/21,East
+Robot Vacuum,Home Goods,Not worth the money.,3,62,163,2024/10/22,West
+Electric Kettle,Kitchen,Very sturdy and reliable.,3,66,85,2024/10/23,South
+Smartwatch,Wearables,Sound quality is amazing.,4,62,82,2024/10/24,West
+4K Action Camera,Electronics,Simple and effective.,1,59,69,2024/10/25,South
+4K Action Camera,Electronics,Sound quality is amazing.,1,60,182,2024/10/26,South
+Gaming Chair,Furniture,Very sturdy and reliable.,1,71,197,2024/10/27,North
+Air Purifier,Home Goods,Battery life could be longer.,5,71,97,2024/10/28,West
+Electric Kettle,Kitchen,Simple and effective.,2,74,160,2024/10/29,South
+Standing Desk,Furniture,Simple and effective.,1,70,181,2024/10/30,South
+Gaming Chair,Furniture,Simple and effective.,1,82,148,2024/10/31,North
+Gaming Chair,Furniture,"Excellent quality, highly recommend.",2,87,39,2024/11/01,South
+Smartwatch,Wearables,Battery life could be longer.,2,89,31,2024/11/02,South
+4K Action Camera,Electronics,Simple and effective.,2,97,182,2024/11/03,North
+Wireless Earbuds,Audio,Sound quality is amazing.,2,95,179,2024/11/04,South
+Wireless Earbuds,Audio,"Excellent quality, highly recommend.",5,105,65,2024/11/05,East
+Robot Vacuum,Home Goods,Simple and effective.,3,112,172,2024/11/06,East
+Standing Desk,Furniture,Simple and effective.,4,108,24,2024/11/07,East
+Electric Kettle,Kitchen,Stopped working after a few months.,3,118,103,2024/11/08,East
+Laptop,Electronics,Simple and effective.,3,115,114,2024/11/09,North
+Gaming Chair,Furniture,"Decent for the price, could be better.",2,110,61,2024/11/10,East
+4K Action Camera,Electronics,Simple and effective.,4,103,109,2024/11/11,North
+Standing Desk,Furniture,Sound quality is amazing.,1,97,115,2024/11/12,East
+Gaming Chair,Furniture,Stopped working after a few months.,1,97,49,2024/11/13,West
+Smartwatch,Wearables,"Excellent quality, highly recommend.",1,92,120,2024/11/14,West
+4K Action Camera,Electronics,Stopped working after a few months.,2,92,110,2024/11/15,South
+Standing Desk,Furniture,Stopped working after a few months.,1,86,51,2024/11/16,South
+Wireless Earbuds,Audio,Loving it so far!,2,97,145,2024/11/17,East
+Wireless Earbuds,Audio,Loving it so far!,2,96,131,2024/11/18,West
+Air Purifier,Home Goods,Loving it so far!,4,102,25,2024/11/19,East
+Standing Desk,Furniture,Sound quality is amazing.,2,106,175,2024/11/20,South
+Blender,Kitchen,Sound quality is amazing.,1,99,68,2024/11/21,East
+Smartwatch,Wearables,Simple and effective.,5,104,89,2024/11/22,South
+Gaming Chair,Furniture,Exceeded my expectations!,1,116,104,2024/11/23,East
+Blender,Kitchen,"Decent for the price, could be better.",2,117,129,2024/11/24,South
+Robot Vacuum,Home Goods,Stopped working after a few months.,5,124,147,2024/11/25,South
+Wireless Earbuds,Audio,Simple and effective.,4,119,78,2024/11/26,South
+Smartwatch,Wearables,Sound quality is amazing.,1,124,172,2024/11/27,South
+Gaming Chair,Furniture,Not worth the money.,4,115,115,2024/11/28,North
+Standing Desk,Furniture,Exceeded my expectations!,3,113,44,2024/11/29,West
+Air Purifier,Home Goods,"Decent for the price, could be better.",2,119,76,2024/11/30,East
+Smartwatch,Wearables,Stopped working after a few months.,3,131,30,2024/12/01,South
+Electric Kettle,Kitchen,Battery life could be longer.,2,135,64,2024/12/02,East
+Robot Vacuum,Home Goods,Very sturdy and reliable.,3,131,145,2024/12/03,West
+Electric Kettle,Kitchen,Battery life could be longer.,2,141,40,2024/12/04,South
+Robot Vacuum,Home Goods,Sound quality is amazing.,3,134,162,2024/12/05,North
+Laptop,Electronics,Stopped working after a few months.,3,131,39,2024/12/06,North
+Robot Vacuum,Home Goods,Battery life could be longer.,1,134,129,2024/12/07,East
+Robot Vacuum,Home Goods,Stopped working after a few months.,1,127,129,2024/12/08,North
+Standing Desk,Furniture,Sound quality is amazing.,4,128,115,2024/12/09,South
+Wireless Earbuds,Audio,Sound quality is amazing.,1,137,27,2024/12/10,West
+Robot Vacuum,Home Goods,Stopped working after a few months.,1,129,50,2024/12/11,West
+Robot Vacuum,Home Goods,Battery life could be longer.,4,134,107,2024/12/12,North
+Wireless Earbuds,Audio,Not worth the money.,3,133,71,2024/12/13,East
+Standing Desk,Furniture,Very sturdy and reliable.,3,126,64,2024/12/14,North
+Electric Kettle,Kitchen,Not worth the money.,4,135,107,2024/12/15,South
+Wireless Earbuds,Audio,"Excellent quality, highly recommend.",2,137,192,2024/12/16,East
+Smartwatch,Wearables,Stopped working after a few months.,2,128,162,2024/12/17,North
+Standing Desk,Furniture,Sound quality is amazing.,3,120,72,2024/12/18,East
+Wireless Earbuds,Audio,Very sturdy and reliable.,4,134,152,2024/12/19,West
+4K Action Camera,Electronics,Sound quality is amazing.,3,144,173,2024/12/20,North
+Air Purifier,Home Goods,Very sturdy and reliable.,2,149,165,2024/12/21,North
+Robot Vacuum,Home Goods,Stopped working after a few months.,3,156,73,2024/12/22,East
+Robot Vacuum,Home Goods,Exceeded my expectations!,4,156,182,2024/12/23,West
+Robot Vacuum,Home Goods,Stopped working after a few months.,4,166,44,2024/12/24,West
+4K Action Camera,Electronics,Stopped working after a few months.,3,167,33,2024/12/25,East
+Laptop,Electronics,Sound quality is amazing.,3,161,50,2024/12/26,East
+4K Action Camera,Electronics,Stopped working after a few months.,5,167,186,2024/12/27,South
+4K Action Camera,Electronics,Not worth the money.,2,170,103,2024/12/28,East
+Electric Kettle,Kitchen,Battery life could be longer.,5,172,129,2024/12/29,South
+4K Action Camera,Electronics,Loving it so far!,5,186,118,2024/12/30,South
+4K Action Camera,Electronics,Stopped working after a few months.,3,189,121,2024/12/31,North
+4K Action Camera,Electronics,Stopped working after a few months.,4,192,92,2025/01/01,North
+Air Purifier,Home Goods,Stopped working after a few months.,5,193,135,2025/01/02,East
+Standing Desk,Furniture,Sound quality is amazing.,1,204,141,2025/01/03,East
+Wireless Earbuds,Audio,Exceeded my expectations!,2,201,93,2025/01/04,West
+Electric Kettle,Kitchen,Simple and effective.,1,198,168,2025/01/05,South
+Robot Vacuum,Home Goods,Very sturdy and reliable.,2,198,90,2025/01/06,East
+Blender,Kitchen,"Excellent quality, highly recommend.",2,199,34,2025/01/07,South
+Robot Vacuum,Home Goods,Battery life could be longer.,4,196,34,2025/01/08,East
+Robot Vacuum,Home Goods,Very sturdy and reliable.,4,202,98,2025/01/09,West
+Standing Desk,Furniture,Simple and effective.,3,205,169,2025/01/10,North
+4K Action Camera,Electronics,Stopped working after a few months.,5,206,52,2025/01/11,South
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",3,198,139,2025/01/12,South
+Electric Kettle,Kitchen,Simple and effective.,1,203,168,2025/01/13,South
+Blender,Kitchen,Not worth the money.,2,197,78,2025/01/14,South
+Gaming Chair,Furniture,Simple and effective.,2,189,21,2025/01/15,West
+Electric Kettle,Kitchen,"Excellent quality, highly recommend.",3,194,57,2025/01/16,South
+Air Purifier,Home Goods,Exceeded my expectations!,5,179,32,2025/01/17,South
+Smartwatch,Wearables,"Excellent quality, highly recommend.",3,185,72,2025/01/18,East
+Robot Vacuum,Home Goods,Loving it so far!,4,184,128,2025/01/19,North
+4K Action Camera,Electronics,Stopped working after a few months.,3,184,142,2025/01/20,North
+Gaming Chair,Furniture,"Decent for the price, could be better.",4,189,108,2025/01/21,West
+Gaming Chair,Furniture,Not worth the money.,3,186,23,2025/01/22,East
+Blender,Kitchen,"Decent for the price, could be better.",5,178,143,2025/01/23,East
+Laptop,Electronics,Simple and effective.,3,172,45,2025/01/24,East
+Wireless Earbuds,Audio,Simple and effective.,5,165,67,2025/01/25,South
+Robot Vacuum,Home Goods,Loving it so far!,3,159,107,2025/01/26,North
+Smartwatch,Wearables,Simple and effective.,5,159,30,2025/01/27,North
+Robot Vacuum,Home Goods,Sound quality is amazing.,3,150,145,2025/01/28,South
+Electric Kettle,Kitchen,Not worth the money.,4,140,128,2025/01/29,West
+Robot Vacuum,Home Goods,Very sturdy and reliable.,1,149,65,2025/01/30,East
+Electric Kettle,Kitchen,Very sturdy and reliable.,5,153,139,2025/01/31,West
+Air Purifier,Home Goods,Very sturdy and reliable.,5,155,150,2025/02/01,East
+Electric Kettle,Kitchen,Stopped working after a few months.,4,151,77,2025/02/02,South
+4K Action Camera,Electronics,Exceeded my expectations!,5,152,138,2025/02/03,East
+Standing Desk,Furniture,"Decent for the price, could be better.",5,150,79,2025/02/04,North
+Gaming Chair,Furniture,Simple and effective.,2,158,55,2025/02/05,East
+Smartwatch,Wearables,Very sturdy and reliable.,4,156,31,2025/02/06,South
+Blender,Kitchen,Not worth the money.,2,152,119,2025/02/07,West
+Air Purifier,Home Goods,Battery life could be longer.,4,158,103,2025/02/08,South
+Air Purifier,Home Goods,Very sturdy and reliable.,2,158,94,2025/02/09,North
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",5,162,83,2025/02/10,West
+Wireless Earbuds,Audio,Loving it so far!,4,163,184,2025/02/11,West
+Smartwatch,Wearables,Battery life could be longer.,3,166,191,2025/02/12,North
+Standing Desk,Furniture,Battery life could be longer.,5,159,93,2025/02/13,East
+Robot Vacuum,Home Goods,Exceeded my expectations!,2,145,35,2025/02/14,North
+Blender,Kitchen,Loving it so far!,5,147,148,2025/02/15,East
+Gaming Chair,Furniture,"Decent for the price, could be better.",1,139,94,2025/02/16,North
+Smartwatch,Wearables,"Decent for the price, could be better.",2,144,41,2025/02/17,East
+Standing Desk,Furniture,Battery life could be longer.,2,147,100,2025/02/18,East
+Blender,Kitchen,Very sturdy and reliable.,5,148,184,2025/02/19,East
+Air Purifier,Home Goods,Exceeded my expectations!,2,155,150,2025/02/20,North
+4K Action Camera,Electronics,Loving it so far!,5,152,66,2025/02/21,South
+Wireless Earbuds,Audio,Stopped working after a few months.,3,148,151,2025/02/22,East
+4K Action Camera,Electronics,Battery life could be longer.,1,153,128,2025/02/23,East
+4K Action Camera,Electronics,Very sturdy and reliable.,2,143,194,2025/02/24,West
+4K Action Camera,Electronics,Exceeded my expectations!,1,148,153,2025/02/25,West
+Wireless Earbuds,Audio,"Excellent quality, highly recommend.",4,136,72,2025/02/26,West
+Electric Kettle,Kitchen,Simple and effective.,3,127,93,2025/02/27,East
+Laptop,Electronics,"Decent for the price, could be better.",2,112,137,2025/02/28,West
+Smartwatch,Wearables,Exceeded my expectations!,2,111,42,2025/03/01,West
+Robot Vacuum,Home Goods,Sound quality is amazing.,1,108,176,2025/03/02,North
+Smartwatch,Wearables,Simple and effective.,3,109,29,2025/03/03,West
+4K Action Camera,Electronics,Exceeded my expectations!,2,100,114,2025/03/04,North
+Gaming Chair,Furniture,Exceeded my expectations!,2,100,70,2025/03/05,South
+Gaming Chair,Furniture,Very sturdy and reliable.,5,96,67,2025/03/06,East
+Blender,Kitchen,Very sturdy and reliable.,2,100,146,2025/03/07,East
+Standing Desk,Furniture,Battery life could be longer.,4,98,199,2025/03/08,North
+Smartwatch,Wearables,"Excellent quality, highly recommend.",5,101,73,2025/03/09,North
+Electric Kettle,Kitchen,"Decent for the price, could be better.",5,99,91,2025/03/10,East
+Wireless Earbuds,Audio,Not worth the money.,5,91,57,2025/03/11,West
+Air Purifier,Home Goods,"Excellent quality, highly recommend.",2,97,196,2025/03/12,North
+Electric Kettle,Kitchen,Sound quality is amazing.,2,93,164,2025/03/13,East
+Standing Desk,Furniture,"Decent for the price, could be better.",4,101,62,2025/03/14,West
+4K Action Camera,Electronics,Sound quality is amazing.,4,93,173,2025/03/15,West
+Smartwatch,Wearables,Simple and effective.,1,81,122,2025/03/16,North
+Smartwatch,Wearables,Battery life could be longer.,3,67,109,2025/03/17,South
+Electric Kettle,Kitchen,Sound quality is amazing.,4,60,153,2025/03/18,East
+4K Action Camera,Electronics,Sound quality is amazing.,1,60,71,2025/03/19,South
+4K Action Camera,Electronics,Stopped working after a few months.,3,62,176,2025/03/20,South
+Standing Desk,Furniture,Battery life could be longer.,5,49,114,2025/03/21,South
+Smartwatch,Wearables,Exceeded my expectations!,4,54,143,2025/03/22,West
+Blender,Kitchen,Stopped working after a few months.,2,53,161,2025/03/23,East
+Electric Kettle,Kitchen,Loving it so far!,4,57,102,2025/03/24,East
+Smartwatch,Wearables,Exceeded my expectations!,2,59,166,2025/03/25,North
+Gaming Chair,Furniture,Sound quality is amazing.,2,65,30,2025/03/26,East
+Air Purifier,Home Goods,Loving it so far!,3,65,124,2025/03/27,West
+Robot Vacuum,Home Goods,Not worth the money.,5,63,65,2025/03/28,West
+Laptop,Electronics,Exceeded my expectations!,4,56,59,2025/03/29,South
+Standing Desk,Furniture,Very sturdy and reliable.,3,52,105,2025/03/30,East
+Robot Vacuum,Home Goods,Not worth the money.,1,48,199,2025/03/31,West
+Gaming Chair,Furniture,Stopped working after a few months.,3,34,115,2025/04/01,East
+Robot Vacuum,Home Goods,Simple and effective.,2,42,181,2025/04/02,South
+Gaming Chair,Furniture,Battery life could be longer.,2,46,156,2025/04/03,East
+Blender,Kitchen,Sound quality is amazing.,5,42,179,2025/04/04,West
+Blender,Kitchen,Simple and effective.,2,49,94,2025/04/05,South
+Standing Desk,Furniture,Loving it so far!,4,48,128,2025/04/06,North
+Smartwatch,Wearables,Very sturdy and reliable.,2,43,199,2025/04/07,East
+Smartwatch,Wearables,Very sturdy and reliable.,3,38,35,2025/04/08,East
+Standing Desk,Furniture,Battery life could be longer.,2,32,196,2025/04/09,North
+Gaming Chair,Furniture,Stopped working after a few months.,5,36,155,2025/04/10,West
+Electric Kettle,Kitchen,Exceeded my expectations!,4,39,50,2025/04/11,South
+4K Action Camera,Electronics,"Excellent quality, highly recommend.",3,31,157,2025/04/12,South
+4K Action Camera,Electronics,"Excellent quality, highly recommend.",1,25,191,2025/04/13,North
+Air Purifier,Home Goods,Exceeded my expectations!,1,11,159,2025/04/14,East
+Laptop,Electronics,Not worth the money.,1,10,72,2025/04/15,South
+Laptop,Electronics,Very sturdy and reliable.,2,15,69,2025/04/16,East
+Electric Kettle,Kitchen,Loving it so far!,1,13,177,2025/04/17,South
+Gaming Chair,Furniture,Loving it so far!,3,27,130,2025/04/18,South
+Electric Kettle,Kitchen,"Excellent quality, highly recommend.",5,32,130,2025/04/19,North
+Gaming Chair,Furniture,Very sturdy and reliable.,1,35,51,2025/04/20,West
+Electric Kettle,Kitchen,"Excellent quality, highly recommend.",4,47,90,2025/04/21,East
+4K Action Camera,Electronics,"Decent for the price, could be better.",2,48,149,2025/04/22,West
+Blender,Kitchen,Battery life could be longer.,1,52,102,2025/04/23,West
+Robot Vacuum,Home Goods,Stopped working after a few months.,3,65,54,2025/04/24,East
+Air Purifier,Home Goods,"Excellent quality, highly recommend.",5,68,61,2025/04/25,North
+Air Purifier,Home Goods,Very sturdy and reliable.,2,74,122,2025/04/26,West
+Smartwatch,Wearables,Stopped working after a few months.,3,87,161,2025/04/27,South
+Wireless Earbuds,Audio,Battery life could be longer.,2,87,102,2025/04/28,West
+Standing Desk,Furniture,Stopped working after a few months.,4,97,74,2025/04/29,North
+Gaming Chair,Furniture,Battery life could be longer.,5,97,86,2025/04/30,South
+Wireless Earbuds,Audio,Simple and effective.,3,95,48,2025/05/01,North
+Wireless Earbuds,Audio,Stopped working after a few months.,1,100,78,2025/05/02,West
+Smartwatch,Wearables,Sound quality is amazing.,2,98,183,2025/05/03,North
+Air Purifier,Home Goods,"Excellent quality, highly recommend.",5,106,142,2025/05/04,West
+Electric Kettle,Kitchen,Exceeded my expectations!,4,115,39,2025/05/05,North
+Standing Desk,Furniture,Exceeded my expectations!,2,113,119,2025/05/06,North
+Robot Vacuum,Home Goods,Very sturdy and reliable.,3,120,45,2025/05/07,North
+Smartwatch,Wearables,Not worth the money.,4,123,191,2025/05/08,South
+Laptop,Electronics,Sound quality is amazing.,4,132,72,2025/05/09,South
+Air Purifier,Home Goods,Not worth the money.,4,133,162,2025/05/10,West
+Wireless Earbuds,Audio,Very sturdy and reliable.,3,125,25,2025/05/11,West
+Electric Kettle,Kitchen,Battery life could be longer.,2,120,88,2025/05/12,East
+Wireless Earbuds,Audio,Not worth the money.,1,123,175,2025/05/13,West
+Smartwatch,Wearables,Loving it so far!,1,121,113,2025/05/14,East
+Standing Desk,Furniture,"Excellent quality, highly recommend.",5,124,183,2025/05/15,South
+Smartwatch,Wearables,"Excellent quality, highly recommend.",5,135,61,2025/05/16,West
+Air Purifier,Home Goods,"Excellent quality, highly recommend.",3,141,179,2025/05/17,South
+Air Purifier,Home Goods,Not worth the money.,4,148,192,2025/05/18,South
+Smartwatch,Wearables,Very sturdy and reliable.,1,152,129,2025/05/19,North
+Wireless Earbuds,Audio,Not worth the money.,1,152,134,2025/05/20,South
+Wireless Earbuds,Audio,Sound quality is amazing.,5,149,196,2025/05/21,South
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",2,159,200,2025/05/22,North
+Smartwatch,Wearables,Exceeded my expectations!,1,155,121,2025/05/23,South
+Standing Desk,Furniture,"Excellent quality, highly recommend.",3,164,190,2025/05/24,East
+Standing Desk,Furniture,Exceeded my expectations!,1,173,139,2025/05/25,West
+Electric Kettle,Kitchen,Very sturdy and reliable.,2,181,131,2025/05/26,South
+Smartwatch,Wearables,Not worth the money.,1,185,36,2025/05/27,South
+Laptop,Electronics,Loving it so far!,4,187,75,2025/05/28,South
+Electric Kettle,Kitchen,Not worth the money.,3,197,65,2025/05/29,North
+Gaming Chair,Furniture,"Excellent quality, highly recommend.",4,191,67,2025/05/30,North
+4K Action Camera,Electronics,Very sturdy and reliable.,2,205,154,2025/05/31,West
+Robot Vacuum,Home Goods,Battery life could be longer.,1,199,169,2025/06/01,West
+Electric Kettle,Kitchen,Exceeded my expectations!,5,204,112,2025/06/02,North
+Wireless Earbuds,Audio,Very sturdy and reliable.,2,210,168,2025/06/03,South
+Laptop,Electronics,"Excellent quality, highly recommend.",1,206,146,2025/06/04,South
+Electric Kettle,Kitchen,Sound quality is amazing.,5,196,115,2025/06/05,North
+Electric Kettle,Kitchen,Very sturdy and reliable.,2,192,165,2025/06/06,East
+4K Action Camera,Electronics,Loving it so far!,5,181,130,2025/06/07,East
+Robot Vacuum,Home Goods,Simple and effective.,2,179,26,2025/06/08,South
+4K Action Camera,Electronics,Sound quality is amazing.,1,166,112,2025/06/09,South
+4K Action Camera,Electronics,Sound quality is amazing.,5,158,64,2025/06/10,South
+Air Purifier,Home Goods,Exceeded my expectations!,1,163,115,2025/06/11,West
+Robot Vacuum,Home Goods,Loving it so far!,1,157,142,2025/06/12,West
+Smartwatch,Wearables,Loving it so far!,5,160,55,2025/06/13,North
+Robot Vacuum,Home Goods,Very sturdy and reliable.,2,154,80,2025/06/14,West
+Gaming Chair,Furniture,Stopped working after a few months.,1,154,170,2025/06/15,East
+4K Action Camera,Electronics,Not worth the money.,2,157,53,2025/06/16,North
+Wireless Earbuds,Audio,Simple and effective.,1,153,73,2025/06/17,South
+Air Purifier,Home Goods,Loving it so far!,3,145,98,2025/06/18,West
+Smartwatch,Wearables,"Decent for the price, could be better.",2,134,180,2025/06/19,West
+Air Purifier,Home Goods,Battery life could be longer.,5,131,100,2025/06/20,West
+Blender,Kitchen,Simple and effective.,3,135,106,2025/06/21,South
+Standing Desk,Furniture,Simple and effective.,1,124,56,2025/06/22,South
+Laptop,Electronics,Simple and effective.,3,118,196,2025/06/23,South
+Electric Kettle,Kitchen,Very sturdy and reliable.,2,109,30,2025/06/24,South
+Wireless Earbuds,Audio,Very sturdy and reliable.,3,108,31,2025/06/25,East
+Electric Kettle,Kitchen,Loving it so far!,5,106,197,2025/06/26,East
+Laptop,Electronics,Simple and effective.,5,101,97,2025/06/27,West
+Wireless Earbuds,Audio,"Excellent quality, highly recommend.",2,98,66,2025/06/28,East
+Electric Kettle,Kitchen,Simple and effective.,3,101,97,2025/06/29,East
+Air Purifier,Home Goods,Simple and effective.,1,97,34,2025/06/30,North
+4K Action Camera,Electronics,Exceeded my expectations!,1,88,38,2025/07/01,West
+Wireless Earbuds,Audio,Stopped working after a few months.,3,84,52,2025/07/02,South
+Standing Desk,Furniture,Exceeded my expectations!,3,74,159,2025/07/03,South
+4K Action Camera,Electronics,"Excellent quality, highly recommend.",3,72,174,2025/07/04,South
+Electric Kettle,Kitchen,Exceeded my expectations!,1,71,126,2025/07/05,South
+Robot Vacuum,Home Goods,Not worth the money.,2,60,85,2025/07/06,South
+4K Action Camera,Electronics,Very sturdy and reliable.,5,49,154,2025/07/07,West
+Wireless Earbuds,Audio,Simple and effective.,4,38,79,2025/07/08,West
+Smartwatch,Wearables,Sound quality is amazing.,2,42,104,2025/07/09,East
+Standing Desk,Furniture,Very sturdy and reliable.,4,30,66,2025/07/10,South
+Blender,Kitchen,Loving it so far!,5,18,91,2025/07/11,West
+Laptop,Electronics,Simple and effective.,4,18,182,2025/07/12,South
+Robot Vacuum,Home Goods,Battery life could be longer.,4,18,197,2025/07/13,West
+Smartwatch,Wearables,"Excellent quality, highly recommend.",3,16,193,2025/07/14,North
+4K Action Camera,Electronics,Exceeded my expectations!,2,24,190,2025/07/15,South
+Laptop,Electronics,Not worth the money.,4,35,59,2025/07/16,West
+Wireless Earbuds,Audio,Very sturdy and reliable.,3,45,160,2025/07/17,East
+Laptop,Electronics,Loving it so far!,2,44,152,2025/07/18,East
+Robot Vacuum,Home Goods,Simple and effective.,2,35,20,2025/07/19,South
+Robot Vacuum,Home Goods,Sound quality is amazing.,1,38,32,2025/07/20,West
+Electric Kettle,Kitchen,Sound quality is amazing.,2,29,168,2025/07/21,South
+Gaming Chair,Furniture,Loving it so far!,2,22,96,2025/07/22,West
+Blender,Kitchen,Exceeded my expectations!,5,34,187,2025/07/23,North
+4K Action Camera,Electronics,Stopped working after a few months.,1,40,114,2025/07/24,West
+Smartwatch,Wearables,Stopped working after a few months.,5,46,138,2025/07/25,East
+Blender,Kitchen,"Decent for the price, could be better.",5,60,139,2025/07/26,West
+Electric Kettle,Kitchen,Battery life could be longer.,2,59,96,2025/07/27,South
+Standing Desk,Furniture,Stopped working after a few months.,2,73,56,2025/07/28,West
+Laptop,Electronics,Stopped working after a few months.,1,70,145,2025/07/29,North
+4K Action Camera,Electronics,Simple and effective.,2,72,59,2025/07/30,North
+Air Purifier,Home Goods,Exceeded my expectations!,1,81,127,2025/07/31,West
+4K Action Camera,Electronics,Battery life could be longer.,5,91,164,2025/08/01,West
+Gaming Chair,Furniture,Loving it so far!,5,86,138,2025/08/02,East
+Laptop,Electronics,"Excellent quality, highly recommend.",3,83,24,2025/08/03,South
+Wireless Earbuds,Audio,"Decent for the price, could be better.",4,93,141,2025/08/04,East
+Smartwatch,Wearables,"Excellent quality, highly recommend.",2,99,78,2025/08/05,North
+4K Action Camera,Electronics,Loving it so far!,4,91,102,2025/08/06,East
+Gaming Chair,Furniture,Sound quality is amazing.,1,101,106,2025/08/07,West
+Standing Desk,Furniture,"Decent for the price, could be better.",4,115,122,2025/08/08,East
+Blender,Kitchen,Simple and effective.,5,113,30,2025/08/09,East
+Standing Desk,Furniture,Battery life could be longer.,2,106,191,2025/08/10,North
+Blender,Kitchen,Simple and effective.,3,114,117,2025/08/11,South
+Smartwatch,Wearables,Battery life could be longer.,3,127,153,2025/08/12,East
+Wireless Earbuds,Audio,Not worth the money.,2,123,161,2025/08/13,South
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",4,130,198,2025/08/14,South
+Air Purifier,Home Goods,Not worth the money.,4,141,106,2025/08/15,South
+Wireless Earbuds,Audio,Not worth the money.,4,151,156,2025/08/16,South
+Electric Kettle,Kitchen,Stopped working after a few months.,1,158,151,2025/08/17,East
+Laptop,Electronics,Battery life could be longer.,3,162,28,2025/08/18,South
+4K Action Camera,Electronics,Sound quality is amazing.,3,171,93,2025/08/19,East
+Wireless Earbuds,Audio,Stopped working after a few months.,1,170,78,2025/08/20,East
+Robot Vacuum,Home Goods,Battery life could be longer.,2,170,181,2025/08/21,East
+Smartwatch,Wearables,Stopped working after a few months.,2,173,89,2025/08/22,East
+Smartwatch,Wearables,"Decent for the price, could be better.",3,177,85,2025/08/23,West
+Standing Desk,Furniture,"Excellent quality, highly recommend.",2,172,107,2025/08/24,East
+Smartwatch,Wearables,Not worth the money.,5,176,28,2025/08/25,North
+Laptop,Electronics,"Decent for the price, could be better.",3,180,153,2025/08/26,South
+Blender,Kitchen,Stopped working after a few months.,4,192,130,2025/08/27,West
+Electric Kettle,Kitchen,Not worth the money.,4,188,124,2025/08/28,West
+Robot Vacuum,Home Goods,Battery life could be longer.,3,187,75,2025/08/29,North
+Gaming Chair,Furniture,Battery life could be longer.,5,185,34,2025/08/30,West
+Robot Vacuum,Home Goods,Stopped working after a few months.,3,182,47,2025/08/31,North
+Standing Desk,Furniture,Loving it so far!,2,196,164,2025/09/01,East
+Laptop,Electronics,Battery life could be longer.,3,192,46,2025/09/02,East
+Blender,Kitchen,Stopped working after a few months.,1,204,105,2025/09/03,West
+Robot Vacuum,Home Goods,"Excellent quality, highly recommend.",5,194,197,2025/09/04,South
+Blender,Kitchen,Stopped working after a few months.,5,187,67,2025/09/05,South
+Blender,Kitchen,Very sturdy and reliable.,2,192,157,2025/09/06,North
+Laptop,Electronics,Simple and effective.,1,199,94,2025/09/07,East
+Air Purifier,Home Goods,"Excellent quality, highly recommend.",4,203,34,2025/09/08,North
+Blender,Kitchen,"Decent for the price, could be better.",4,204,78,2025/09/09,South
+Electric Kettle,Kitchen,Sound quality is amazing.,2,197,117,2025/09/10,North
+Standing Desk,Furniture,Not worth the money.,4,189,195,2025/09/11,North
+Blender,Kitchen,"Decent for the price, could be better.",1,191,62,2025/09/12,West
+Smartwatch,Wearables,Simple and effective.,1,194,60,2025/09/13,West
+Wireless Earbuds,Audio,Exceeded my expectations!,4,202,158,2025/09/14,South
+Standing Desk,Furniture,Loving it so far!,2,204,167,2025/09/15,South
+Gaming Chair,Furniture,Loving it so far!,4,206,160,2025/09/16,North
+Gaming Chair,Furniture,Sound quality is amazing.,1,201,135,2025/09/17,North
+Blender,Kitchen,Stopped working after a few months.,4,194,135,2025/09/18,North
+Robot Vacuum,Home Goods,Not worth the money.,1,196,154,2025/09/19,West
+Gaming Chair,Furniture,"Excellent quality, highly recommend.",3,185,142,2025/09/20,East
+Blender,Kitchen,Very sturdy and reliable.,2,177,120,2025/09/21,North
+Gaming Chair,Furniture,Simple and effective.,1,170,150,2025/09/22,North
+Gaming Chair,Furniture,"Excellent quality, highly recommend.",5,166,180,2025/09/23,East

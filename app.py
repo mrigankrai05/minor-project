@@ -18,6 +18,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import timedelta
 from pandas.tseries.offsets import DateOffset
+import warnings
+
+# Suppress the UserWarning from sklearn
+warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 
 # --- Initialization and Model Training ---
 app = Flask(__name__)
@@ -113,58 +117,16 @@ def generate_category_performance_chart(df):
     plt.xticks(rotation=45, ha='right')
     return fig_to_base64(fig)
 
-# --- New Strategic Insight Functions ---
-def generate_profitability_popularity_chart(df):
-    if df.empty or 'product_category' not in df.columns:
-        return ""
-    
-    category_analysis = df.groupby('product_category').agg(
-        total_profit=pd.NamedAgg(column='net_profit', aggfunc='sum'),
-        total_units_sold=pd.NamedAgg(column='units_sold', aggfunc='sum')
-    ).reset_index()
-
-    category_analysis = category_analysis[category_analysis['total_units_sold'] > 0]
-    if category_analysis.empty:
-        return ""
-        
-    category_analysis['profit_per_unit'] = category_analysis['total_profit'] / category_analysis['total_units_sold']
-
-    median_profit_per_unit = category_analysis['profit_per_unit'].median()
-    median_units_sold = category_analysis['total_units_sold'].median()
-
-    fig, ax = plt.subplots(figsize=(9, 6), dpi=100)
-    sns.scatterplot(
-        data=category_analysis, x='total_units_sold', y='profit_per_unit',
-        hue='product_category', size='total_profit', sizes=(100, 1000),
-        ax=ax, legend=True, palette='viridis'
-    )
-    
-    ax.axhline(median_profit_per_unit, color='grey', linestyle='--')
-    ax.axvline(median_units_sold, color='grey', linestyle='--')
-    
-    plt.title('Profitability vs. Popularity Quadrant', pad=20, fontweight='bold')
-    ax.set_xlabel('Total Units Sold (Popularity)')
-    ax.set_ylabel('Average Profit per Unit (Profitability)')
-    ax.legend(title='Product Category', bbox_to_anchor=(1.05, 1), loc='upper left')
-
-    ax.text(ax.get_xlim()[1], median_profit_per_unit, ' High Margin', va='bottom', ha='right', color='grey')
-    ax.text(ax.get_xlim()[1], median_profit_per_unit, ' Low Margin', va='top', ha='right', color='grey')
-    ax.text(median_units_sold, ax.get_ylim()[1], ' Niche', ha='right', va='top', rotation=90, color='grey')
-    ax.text(median_units_sold, ax.get_ylim()[1], ' Mass Market', ha='left', va='top', rotation=90, color='grey')
-
-    return fig_to_base64(fig)
-
 def generate_recommendations(df):
     if df.empty: return {}
-
-    # 1. Category Quadrant Analysis
+    recommendations = {}
+    
+    # Category Analysis for High Potential & Optimize
     category_analysis = df.groupby('product_category').agg(
         total_profit=('net_profit', 'sum'),
         total_units_sold=('units_sold', 'sum')
     ).reset_index()
     category_analysis = category_analysis[category_analysis['total_units_sold'] > 0]
-    
-    recommendations = {}
     
     if not category_analysis.empty:
         category_analysis['profit_per_unit'] = category_analysis['total_profit'] / category_analysis['total_units_sold']
@@ -174,14 +136,14 @@ def generate_recommendations(df):
         high_potential = category_analysis[(category_analysis['profit_per_unit'] > median_profit) & (category_analysis['total_units_sold'] < median_sales)]
         if not high_potential.empty:
             focus_cat = high_potential.sort_values('profit_per_unit', ascending=False).iloc[0]
-            recommendations['focus_on'] = f"Focus marketing on '{focus_cat['product_category']}'. It has a high profit margin (${focus_cat['profit_per_unit']:.2f}/unit) but low sales volume. Increasing its popularity could significantly boost overall profit."
+            recommendations['focus_on'] = f"Focus marketing on '{focus_cat['product_category']}'. It has a high profit margin (${focus_cat['profit_per_unit']:.2f}/unit) but low sales volume."
 
         cash_cows = category_analysis[(category_analysis['profit_per_unit'] < median_profit) & (category_analysis['total_units_sold'] > median_sales)]
         if not cash_cows.empty:
             optimize_cat = cash_cows.sort_values('total_units_sold', ascending=False).iloc[0]
-            recommendations['optimize'] = f"'{optimize_cat['product_category']}' is a 'cash cow' with high sales but low margins (${optimize_cat['profit_per_unit']:.2f}/unit). Explore ways to reduce costs or bundle with higher-margin products."
+            recommendations['optimize'] = f"'{optimize_cat['product_category']}' is a 'cash cow' with high sales but low margins (${optimize_cat['profit_per_unit']:.2f}/unit). Explore cost reduction."
 
-    # 2. Product Level Analysis
+    # Product Level Analysis for Promote & Investigate
     product_performance = df.groupby('product_name').agg(
         total_profit=('net_profit', 'sum'),
         avg_rating=('rating', 'mean')
@@ -191,8 +153,8 @@ def generate_recommendations(df):
         best_product = product_performance.sort_values('total_profit', ascending=False).iloc[0]
         worst_product = product_performance[product_performance['avg_rating'] < 3].sort_values('total_profit').iloc[0] if not product_performance[product_performance['avg_rating'] < 3].empty else product_performance.sort_values('total_profit').iloc[0]
         
-        recommendations['promote'] = f"Promote '{best_product['product_name']}'. It's your most profitable product, generating ${best_product['total_profit']:,.2f} in total profit."
-        recommendations['investigate'] = f"Investigate '{worst_product['product_name']}'. It has a low average rating ({worst_product['avg_rating']:.1f}/5) and low profit. Check negative reviews for recurring issues."
+        recommendations['promote'] = f"Promote '{best_product['product_name']}'. It's your most profitable product, generating ${best_product['total_profit']:,.2f}."
+        recommendations['investigate'] = f"Investigate '{worst_product['product_name']}'. It has a low average rating ({worst_product['avg_rating']:.1f}/5) and low profit."
 
     return recommendations
 
@@ -201,79 +163,59 @@ def generate_forecast_chart(df, value_col, title, y_label):
     df_c = df.copy()
     df_c['purchase_date'] = pd.to_datetime(df_c['purchase_date'])
     df_ts = df_c.set_index('purchase_date').resample('ME')[value_col].sum()
-
     if len(df_ts) < 2: return "", 0
-
-    df_ts = df_ts.reset_index()
-    df_ts['time'] = np.arange(len(df_ts.index))
-
-    X = df_ts[['time']]
-    y = df_ts[value_col]
-    
-    model_lr = LinearRegression()
-    model_lr.fit(X, y)
-    
+    df_ts = df_ts.reset_index(); df_ts['time'] = np.arange(len(df_ts.index))
+    X, y = df_ts[['time']], df_ts[value_col]
+    model_lr = LinearRegression().fit(X, y)
     last_time = df_ts['time'].max()
     future_time = np.arange(last_time + 1, last_time + 7).reshape(-1, 1)
-    
-    future_time_df = pd.DataFrame(future_time, columns=['time'])
-    future_pred = model_lr.predict(future_time_df)
-    
+    future_pred = model_lr.predict(future_time)
     last_date = df_ts['purchase_date'].max()
     future_dates = pd.to_datetime([last_date + DateOffset(months=i) for i in range(1, 7)])
-
     fig, ax = plt.subplots(figsize=(8, 4), dpi=100)
     ax.plot(df_ts['purchase_date'], y, label='Historical Data', marker='o', color='#3b82f6')
     ax.plot(future_dates, future_pred, label='Forecast', linestyle='--', marker='o', color='#f97316')
-    ax.set_title(title, pad=20, fontweight='bold')
-    ax.set_xlabel('Month')
-    ax.set_ylabel(y_label)
-    ax.legend()
-    ax.grid(True, linestyle='--', alpha=0.6)
-    plt.xticks(rotation=45)
-    
-    predicted_next_month = future_pred[0] if len(future_pred) > 0 else 0
-    return fig_to_base64(fig), predicted_next_month
+    ax.set_title(title, pad=20, fontweight='bold'); ax.set_xlabel('Month'); ax.set_ylabel(y_label)
+    ax.legend(); ax.grid(True, linestyle='--', alpha=0.6); plt.xticks(rotation=45)
+    return fig_to_base64(fig), future_pred[0] if len(future_pred) > 0 else 0
 
 def generate_sentiment_trend_chart(df):
     df_c = df.copy()
     df_c['purchase_date'] = pd.to_datetime(df_c['purchase_date'])
     monthly_sentiment = df_c.set_index('purchase_date').resample('ME')['predicted_sentiment'].apply(lambda x: (x == 'Positive').sum() / len(x) * 100 if len(x) > 0 else 0)
-    
     if len(monthly_sentiment) < 2: return "", 0
-
-    df_ts = monthly_sentiment.reset_index()
-    df_ts.columns = ['purchase_date', 'positive_pct']
-    df_ts['time'] = np.arange(len(df_ts.index))
-
-    X = df_ts[['time']]
-    y = df_ts['positive_pct']
-
-    model_lr = LinearRegression()
-    model_lr.fit(X, y)
-
+    df_ts = monthly_sentiment.reset_index(); df_ts.columns = ['purchase_date', 'positive_pct']; df_ts['time'] = np.arange(len(df_ts.index))
+    X, y = df_ts[['time']], df_ts['positive_pct']
+    model_lr = LinearRegression().fit(X, y)
     last_time = df_ts['time'].max()
     future_time = np.arange(last_time + 1, last_time + 7).reshape(-1, 1)
-    
-    future_time_df = pd.DataFrame(future_time, columns=['time'])
-    future_pred = model_lr.predict(future_time_df)
-
+    future_pred = model_lr.predict(future_time)
     last_date = df_ts['purchase_date'].max()
     future_dates = pd.to_datetime([last_date + DateOffset(months=i) for i in range(1, 7)])
-    
     fig, ax = plt.subplots(figsize=(8, 4), dpi=100)
     ax.plot(df_ts['purchase_date'], y, label='Historical Trend', marker='o', color='#22c55e')
     ax.plot(future_dates, future_pred, label='Forecast', linestyle='--', marker='o', color='#f97316')
-    ax.set_title('Positive Sentiment Trend Forecast', pad=20, fontweight='bold')
-    ax.set_xlabel('Month')
-    ax.set_ylabel('Positive Reviews (%)')
-    ax.set_ylim(0, 100)
-    ax.legend()
-    ax.grid(True, linestyle='--', alpha=0.6)
-    plt.xticks(rotation=45)
+    ax.set_title('Positive Sentiment Trend Forecast', pad=20, fontweight='bold'); ax.set_xlabel('Month'); ax.set_ylabel('Positive Reviews (%)'); ax.set_ylim(0, 100)
+    ax.legend(); ax.grid(True, linestyle='--', alpha=0.6); plt.xticks(rotation=45)
+    return fig_to_base64(fig), future_pred[0] if len(future_pred) > 0 else 0
 
-    predicted_next_month = future_pred[0] if len(future_pred) > 0 else 0
-    return fig_to_base64(fig), predicted_next_month
+def generate_top_category_sales_forecast(df):
+    if df.empty or df['units_sold'].sum() == 0: return "", "N/A", 0
+    top_category = df.groupby('product_category')['units_sold'].sum().idxmax()
+    df_category = df[df['product_category'] == top_category].copy()
+    chart_b64, next_month_pred = generate_forecast_chart(df_category, 'units_sold', f'Forecast for Top Category: {top_category}', 'Units Sold')
+    return chart_b64, top_category, next_month_pred
+
+def predict_top_selling_product(df):
+    if df.empty: return "N/A"
+    df_c = df.copy()
+    df_c['purchase_date'] = pd.to_datetime(df_c['purchase_date'])
+    most_recent_date = df_c['purchase_date'].max()
+    three_months_ago = most_recent_date - DateOffset(months=3)
+    recent_sales = df_c[df_c['purchase_date'] >= three_months_ago]
+    if recent_sales.empty: return "Not enough recent data"
+    top_product = recent_sales.groupby('product_name')['units_sold'].sum().idxmax()
+    return top_product
 
 def fig_to_base64(fig):
     buf = io.BytesIO()
@@ -299,8 +241,8 @@ def analyze_data():
         df_user = pd.read_csv(file)
         required_cols = ['product_name', 'product_category', 'review', 'rating', 'net_profit', 'units_sold', 'purchase_date', 'region']
         if not all(col in df_user.columns for col in required_cols):
-            return jsonify({'error': f'CSV is missing required columns. It must contain: {", ".join(required_cols)}'}), 400
-        
+             return jsonify({'error': f'CSV is missing required columns. It must contain: {", ".join(required_cols)}'}), 400
+
         df_user['purchase_date'] = pd.to_datetime(df_user['purchase_date'], errors='coerce', dayfirst=False)
         df_user['rating'] = pd.to_numeric(df_user['rating'], errors='coerce')
         df_user.dropna(subset=['purchase_date', 'rating', 'review'], inplace=True)
@@ -309,7 +251,6 @@ def analyze_data():
             return jsonify({'error': 'No valid data rows found after cleaning. Please check date formats and ensure ratings and reviews are not empty.'}), 400
 
         df_user['rating'] = df_user['rating'].astype(int)
-
         df_user['cleaned_review'] = df_user['review'].apply(clean_text)
         X_user = vectorizer.transform(df_user['cleaned_review'])
         df_user['predicted_sentiment'] = model.predict(X_user)
@@ -342,8 +283,9 @@ def analyze_data():
 
         avg_rating = df_user['rating'].mean()
 
-        profit_forecast_chart, next_month_profit = generate_forecast_chart(df_user, 'net_profit', 'Net Profit Forecast (Next 6 Months)', 'Net Profit ($)')
-        sales_forecast_chart, next_month_sales = generate_forecast_chart(df_user, 'units_sold', 'Sales Volume Forecast (Next 6 Months)', 'Units Sold')
+        profit_forecast_chart, next_month_profit = generate_forecast_chart(df_user, 'net_profit', 'Overall Profit Forecast', 'Net Profit ($)')
+        sales_forecast_chart, next_month_sales = generate_forecast_chart(df_user, 'units_sold', 'Overall Sales Volume Forecast', 'Units Sold')
+        top_cat_forecast_chart, top_cat_name, top_cat_next_sales = generate_top_category_sales_forecast(df_user)
         sentiment_trend_chart, next_month_sentiment = generate_sentiment_trend_chart(df_user)
         
         summary_stats = {
@@ -353,7 +295,14 @@ def analyze_data():
             'category': {'top_category': top_category, 'top_category_profit': f"${top_category_profit:,.2f}" },
             'rating': {'avg_rating': f"{avg_rating:.2f} out of 5" if not pd.isna(avg_rating) else "N/A" },
             'trends': {'negative_reviews_count': negative_count },
-            'predictions': { 'next_month_profit': f"${next_month_profit:,.2f}", 'next_month_sales': f"{int(next_month_sales):,}", 'next_month_sentiment': f"{next_month_sentiment:.1f}% Positive" }
+            'predictions': { 
+                'next_month_profit': f"${next_month_profit:,.2f}", 
+                'next_month_sales': f"{int(next_month_sales):,}", 
+                'next_month_sentiment': f"{next_month_sentiment:.1f}% Positive",
+                'top_category_name': top_cat_name,
+                'next_month_top_category_sales': f"{int(top_cat_next_sales):,} units",
+                'next_month_top_product': predict_top_selling_product(df_user)
+            }
         }
         
         charts = {
@@ -362,10 +311,10 @@ def analyze_data():
             'sales_region': generate_sales_by_region_chart(df_user),
             'rating_sentiment': generate_rating_sentiment_heatmap(df_user),
             'category_performance': generate_category_performance_chart(df_user),
-            'profit_popularity': generate_profitability_popularity_chart(df_user),
             'profit_forecast': profit_forecast_chart,
             'sales_forecast': sales_forecast_chart,
-            'sentiment_trend': sentiment_trend_chart
+            'sentiment_trend': sentiment_trend_chart,
+            'top_category_sales_forecast': top_cat_forecast_chart
         }
 
         recommendations = generate_recommendations(df_user)

@@ -9,34 +9,36 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f1f5f9; 
+            background-color: #f1f5f9; /* Slate 100 */
+            background-image: radial-gradient(circle at top left, #e0e7ff, #f1f5f9 50%);
         }
         .card {
             background-color: white;
             border-radius: 0.75rem;
-            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0; /* Slate 200 */
+            transform-style: preserve-3d;
         }
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+            transform: translateY(-8px) rotateX(2deg) rotateY(-2deg);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
         }
         .section-title {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             font-weight: 700;
-            color: #1e293b;
+            color: #1e293b; /* Slate 800 */
         }
         .stat-card {
             display: flex;
             align-items: center;
             gap: 1rem;
             padding: 1rem;
-            background-color: #f8fafc;
+            background-color: #f8fafc; /* Slate 50 */
             border-radius: 0.5rem;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #e2e8f0; /* Slate 200 */
         }
         .stat-card-icon {
             flex-shrink: 0;
@@ -57,13 +59,17 @@
 </head>
 <body class="p-4 md:p-8">
     <div class="max-w-7xl mx-auto">
+        <!-- Header -->
         <header class="text-center mb-10">
             <div class="inline-block bg-white p-4 rounded-xl shadow-md">
                 <h1 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">
-                    Buisness Insights Dashboard
+                    Smart Insights Dashboard
                 </h1>
             </div>
+            <p class="text-slate-600 mt-3 max-w-2xl mx-auto">Leverage AI to turn customer feedback into actionable business intelligence.</p>
         </header>
+
+        <!-- Upload Section -->
         <div class="card p-6 mb-10">
             <h2 class="section-title text-xl mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
@@ -89,22 +95,14 @@
             <section id="strategic-insights" class="mb-12">
                 <h2 class="section-title text-2xl mb-6 justify-center">
                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-                    <span>Strategic Insights & Recommendations</span>
+                    <span>Strategic Recommendations</span>
                 </h2>
-                <div class="card p-6 mb-8">
+                <div class="card p-6">
                     <h3 class="section-title text-lg mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
                         <span>Actionable Advice</span>
                     </h3>
-                    <div id="recommendations-content" class="space-y-4 text-sm"></div>
-                </div>
-                <div class="card p-6 flex flex-col items-center">
-                    <h3 class="section-title text-lg mb-2">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="4"/><line x1="4" x2="20" y1="12" y2="12"/></svg>
-                       <span>Profitability vs. Popularity Quadrant</span>
-                    </h3>
-                    <img id="profit-popularity-chart" src="" alt="Profitability vs. Popularity Quadrant" class="max-w-full h-auto"/>
-                    <p class="text-xs text-slate-500 mt-2 text-center">This chart plots each category's profit margin against its sales volume, identifying Stars, High Potentials, Cash Cows, and Dogs.</p>
+                    <div id="recommendations-content" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"></div>
                 </div>
             </section>
 
@@ -158,20 +156,25 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.22 6.82a2 2 0 0 0-2.83 0L6.45 14.76l-1.35-1.35a2 2 0 0 0-2.83 0v0a2 2 0 0 0 0 2.83l4.18 4.18a2 2 0 0 0 2.83 0L19 8.18a2 2 0 0 0 0-2.83Z"/><path d="M22 12A10 10 0 1 1 12 2"/></svg>
                     <span>Future Predictions</span>
                 </h2>
-                <div class="grid grid-cols-1 gap-8">
-                    <!-- Profit Forecast -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                     <div id="top-product-prediction-stats" class="md:col-span-2"></div>
+                </div>
+                <div class="space-y-8">
                     <div class="card p-6 flex flex-col items-center">
-                        <h3 class="section-title text-lg mb-2">Profit Forecast</h3>
+                        <h3 class="section-title text-lg mb-2">Overall Profit Forecast</h3>
                         <img id="profit-forecast-chart" src="" alt="Profit Forecast" class="max-w-full h-auto"/>
                         <div id="profit-prediction-stats" class="w-full text-sm mt-4"></div>
                     </div>
-                    <!-- Sales Forecast -->
                     <div class="card p-6 flex flex-col items-center">
-                        <h3 class="section-title text-lg mb-2">Sales Forecast</h3>
+                        <h3 class="section-title text-lg mb-2">Overall Sales Forecast</h3>
                         <img id="sales-forecast-chart" src="" alt="Sales Forecast" class="max-w-full h-auto"/>
                         <div id="sales-prediction-stats" class="w-full text-sm mt-4"></div>
                     </div>
-                    <!-- Sentiment Trend -->
+                    <div class="card p-6 flex flex-col items-center">
+                        <h3 class="section-title text-lg mb-2">Top Category Sales Forecast</h3>
+                        <img id="top-category-sales-forecast-chart" src="" alt="Top Category Sales Forecast" class="max-w-full h-auto"/>
+                        <div id="top-category-sales-prediction-stats" class="w-full text-sm mt-4"></div>
+                    </div>
                     <div class="card p-6 flex flex-col items-center">
                         <h3 class="section-title text-lg mb-2">Sentiment Trend Forecast</h3>
                         <img id="sentiment-trend-chart" src="" alt="Sentiment Trend" class="max-w-full h-auto"/>
@@ -226,13 +229,10 @@
                 trendsList.innerHTML = '';
                 if (data.trends.length > 0) {
                     data.trends.forEach(trend => {
-                        const trendEl = document.createElement('div');
-                        trendEl.className = 'bg-slate-100 p-2 rounded-md text-slate-700 text-sm font-medium';
-                        trendEl.textContent = trend;
-                        trendsList.appendChild(trendEl);
+                        trendsList.innerHTML += `<div class="bg-slate-100 p-2 rounded-md text-slate-700 text-sm font-medium">${trend}</div>`;
                     });
                 } else {
-                    trendsList.innerHTML = '<p class="text-slate-500 text-sm">No significant trends found in negative reviews.</p>';
+                    trendsList.innerHTML = '<p class="text-slate-500 text-sm">No significant trends found.</p>';
                 }
                 
                 // Populate Stats
@@ -246,10 +246,14 @@
                 document.getElementById('rating-stats').innerHTML = `<div class="stat-card-icon bg-yellow-100 text-yellow-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><p class="text-sm text-slate-500">Overall Avg. Rating</p><p class="text-lg font-bold text-slate-800">${stats.rating.avg_rating}</p></div>`;
                 
                 // Predictions
-                document.getElementById('profit-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Predicted Profit Next Month</p><p class="text-xl font-bold text-slate-800">${stats.predictions.next_month_profit}</p></div></div>`;
-                document.getElementById('sales-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Predicted Sales Next Month</p><p class="text-xl font-bold text-slate-800">${stats.predictions.next_month_sales} units</p></div></div>`;
-                document.getElementById('sentiment-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Predicted Sentiment Next Month</p><p class="text-xl font-bold text-slate-800">${stats.predictions.next_month_sentiment}</p></div></div>`;
-                
+                const preds = stats.predictions;
+                document.getElementById('profit-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Predicted Profit Next Month</p><p class="text-xl font-bold text-slate-800">${preds.next_month_profit}</p></div></div>`;
+                document.getElementById('sales-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Predicted Sales Next Month</p><p class="text-xl font-bold text-slate-800">${preds.next_month_sales} units</p></div></div>`;
+                document.getElementById('sentiment-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Predicted Sentiment Next Month</p><p class="text-xl font-bold text-slate-800">${preds.next_month_sentiment}</p></div></div>`;
+                document.getElementById('top-category-sales-prediction-stats').innerHTML = `<div class="stat-card"><div><p class="text-sm text-slate-500">Next Month's Sales for ${preds.top_category_name}</p><p class="text-xl font-bold text-slate-800">${preds.next_month_top_category_sales}</p></div></div>`;
+                document.getElementById('top-product-prediction-stats').innerHTML = `<div class="card p-6 text-center"><p class="text-sm text-slate-500">Predicted Top Seller Next Month</p><p class="text-2xl font-bold text-indigo-600 mt-2">${preds.next_month_top_product}</p></div>`;
+
+
                 // Recommendations
                 const recs = data.recommendations;
                 const recsContent = document.getElementById('recommendations-content');

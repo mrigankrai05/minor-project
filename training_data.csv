@@ -1,198 +1,451 @@
 product_name,product_category,review,sentiment
-Wireless Mouse,Accessories,"The scroll wheel is very stiff and difficult to use. My finger gets tired.",Negative
-Gaming Headset,Audio,"Incredibly comfortable for long gaming sessions and the sound is crystal clear.",Positive
-Laptop Sleeve,Accessories,"It's a laptop sleeve. It does what it's supposed to. Nothing special.",Neutral
-Smartwatch,Wearables,"The battery life is a joke. I have to charge it twice a day. Completely unacceptable.",Negative
-Portable Charger,Accessories,"A lifesaver for travel. Has a huge capacity and charges my phone multiple times.",Positive
-Webcam,Accessories,"The video quality is decent for the price. It works for my daily meetings.",Neutral
-Mechanical Keyboard,Accessories,"The spacebar started squeaking loudly after just one week. So annoying.",Negative
-LED Monitor,Electronics,"Vibrant colors and sharp text. An excellent monitor for both work and gaming.",Positive
-USB-C Hub,Accessories,"It's a hub. It has the ports it advertised and they all seem to work.",Neutral
-Ergonomic Mouse,Accessories,"The shape is very strange and I can't get a comfortable grip on it.",Negative
-Wireless Earbuds,Audio,"The pairing process is seamless and the connection is very stable. No dropouts.",Positive
-Monitor Stand,Accessories,"It's a stand. It holds my monitor at the right height. It's fine.",Neutral
-External SSD,Electronics,"The drive failed completely after two months and I lost all of my data.",Negative
-Smartphone,Electronics,"The camera is absolutely stunning. The pictures are so crisp and detailed.",Positive
-Tablet,Electronics,"The performance is okay for browsing the web, but it struggles with games.",Neutral
-Gaming Headset,Audio,"My friends say the microphone makes me sound like I'm underwater.",Negative
-Laptop Sleeve,Accessories,"The extra pocket for the charger and mouse is a very thoughtful design feature.",Positive
-Smartwatch,Wearables,"It tracks my steps and heart rate. It does the basic things correctly.",Neutral
-Portable Charger,Accessories,"It gets incredibly hot while charging. It makes me nervous to leave it unattended.",Negative
-Webcam,Accessories,"The privacy shutter is a great feature for peace of mind.",Positive
-Mechanical Keyboard,Accessories,"It's a keyboard and it types. The keys are a bit mushy for my taste.",Neutral
-LED Monitor,Electronics,"There is a dead pixel right in the center of the screen. So distracting.",Negative
-Wireless Mouse,Accessories,"The silent clicks are amazing. I can work late at night without disturbing anyone.",Positive
-Bluetooth Speaker,Audio,"It plays music. The sound quality is neither good nor bad.",Neutral
-Gaming Keyboard,Accessories,"The software is confusing and poorly designed. I can't figure out how to customize the lighting.",Negative
-Laptop Stand,Accessories,"Solid aluminum build. It feels very sturdy and premium.",Positive
-Noise Cancelling Headphones,Audio,"The noise cancellation is okay, but it's not as good as the more expensive brands.",Neutral
-Smartwatch,Wearables,"The screen is very dim and impossible to read in direct sunlight.",Negative
-Portable Charger,Accessories,"It's slim and lightweight, which is perfect for carrying in my pocket.",Positive
-Webcam,Accessories,"The camera's field of view is a bit narrow. It feels very zoomed in.",Neutral
-Mechanical Keyboard,Accessories,"The keycaps feel cheap and flimsy. They have a greasy texture.",Negative
-LED Monitor,Electronics,"The stand is not adjustable at all. You're stuck with one height and angle.",Negative
-USB-C Hub,Accessories,"All the ports work as advertised. A simple device that does its job.",Positive
-Ergonomic Mouse,Accessories,"It took a while to get used to, but my wrist pain is completely gone. I love it.",Positive
-Wireless Earbuds,Audio,"The charging case is huge and bulky. Not very pocket-friendly.",Negative
-Monitor Stand,Accessories,"The color doesn't match the pictures. It's a much darker shade of grey.",Neutral
-External SSD,Electronics,"The included USB cable is way too short. It's almost useless.",Negative
-Smartphone,Electronics,"The battery life is phenomenal. I can easily go two full days on a single charge.",Positive
-Tablet,Electronics,"The screen is a fingerprint magnet. I have to wipe it constantly.",Neutral
-Wireless Mouse,Accessories,"The mouse is too light and feels like a cheap toy.",Negative
-Gaming Headset,Audio,"The virtual surround sound is very convincing and helps in games.",Positive
-Laptop Sleeve,Accessories,"The material feels a bit thin. I'm not sure how much protection it offers.",Neutral
-Smartwatch,Wearables,"The vibration motor is very weak. I miss most of my notifications.",Negative
-Portable Charger,Accessories,"The digital display showing the exact percentage is a great feature.",Positive
-Webcam,Accessories,"The picture is fine. It's not great, but it's not terrible either.",Neutral
-Mechanical Keyboard,Accessories,"The layout is a bit cramped. I keep pressing the wrong keys.",Negative
-LED Monitor,Electronics,"The thin bezels are great for a multi-monitor setup.",Positive
-USB-C Hub,Accessories,"It works. That's about all I can say about it.",Neutral
-Ergonomic Mouse,Accessories,"The scroll wheel is loud and clicky. It's very distracting.",Negative
-Wireless Earbuds,Audio,"They stay in my ears securely, even when I'm running.",Positive
-Monitor Stand,Accessories,"The assembly instructions were unclear. It took longer than it should have.",Neutral
-External SSD,Electronics,"The drive gets disconnected from my computer if I bump the cable slightly.",Negative
-Smartphone,Electronics,"The phone feels very sluggish and laggy, even with simple tasks.",Negative
-Tablet,Electronics,"The speakers are surprisingly loud and clear for a tablet.",Positive
-Wireless Mouse,Accessories,"The DPI button for changing sensitivity is a nice feature.",Positive
-Gaming Headset,Audio,"The headset is too tight and gives me a headache after an hour.",Negative
-Laptop Sleeve,Accessories,"The zipper feels sturdy and slides smoothly.",Positive
-Smartwatch,Wearables,"It's a decent watch. It tells the time and shows my notifications.",Neutral
-Portable Charger,Accessories,"It doesn't support fast charging. It charges my phone very slowly.",Negative
-Webcam,Accessories,"The auto light correction works pretty well in my dim room.",Positive
-Mechanical Keyboard,Accessories,"The RGB lighting is just a gimmick. The colors are not very vibrant.",Neutral
-LED Monitor,Electronics,"The monitor has a significant amount of backlight bleed around the edges.",Negative
-USB-C Hub,Accessories,"The pass-through charging is very convenient.",Positive
-Ergonomic Mouse,Accessories,"The side buttons are poorly placed. I keep pressing them by accident.",Negative
-Wireless Earbuds,Audio,"The sound quality is just okay. It lacks bass and clarity.",Neutral
-Monitor Stand,Accessories,"It creates a useful storage space on my desk underneath the monitor.",Positive
-External SSD,Electronics,"The drive is completely silent since it has no moving parts.",Positive
-Smartphone,Electronics,"The face unlock feature is very unreliable. It fails most of the time.",Negative
-Tablet,Electronics,"It has a headphone jack, which is a rare and welcome feature these days.",Positive
-Wireless Mouse,Accessories,"The shape is just average. Not particularly comfortable or uncomfortable.",Neutral
-Gaming Headset,Audio,"The microphone is not removable, which is annoying.",Neutral
-Laptop Sleeve,Accessories,"The sleeve had a very strong chemical smell when I first opened it.",Negative
-Smartwatch,Wearables,"The watchband is made of a cheap-feeling rubber that irritates my skin.",Negative
-Portable Charger,Accessories,"The power bank itself recharges very quickly.",Positive
-Webcam,Accessories,"The camera clip doesn't fit securely on my thick monitor.",Negative
-Mechanical Keyboard,Accessories,"The feet on the bottom are not very grippy, so the keyboard slides around.",Negative
-LED Monitor,Electronics,"The built-in speakers are terrible, but that's to be expected.",Neutral
-USB-C Hub,Accessories,"The ethernet port is a great feature for a stable internet connection.",Positive
-Ergonomic Mouse,Accessories,"The silent clicks are a fantastic feature for a quiet office environment.",Positive
-Wireless Earbuds,Audio,"The touch controls are too sensitive and I often trigger them by accident.",Negative
-Monitor Stand,Accessories,"It's made of plastic, but it feels sturdy enough.",Neutral
-External SSD,Electronics,"The drive comes with a nice carrying pouch.",Positive
-Smartphone,Electronics,"The software is full of annoying bloatware that I can't uninstall.",Negative
-Tablet,Electronics,"The screen aspect ratio is good for watching movies.",Positive
-Wireless Mouse,Accessories,"The battery life is incredible. I've been using it for months on one charge.",Positive
-Gaming Headset,Audio,"The earcups are not very breathable and my ears get hot.",Negative
-Laptop Sleeve,Accessories,"It's a bit of a tight fit for my laptop. It's a struggle to get it in and out.",Neutral
-Smartwatch,Wearables,"The charging puck is magnetic and attaches easily.",Positive
-Portable Charger,Accessories,"It's too heavy and bulky to carry around comfortably.",Negative
-Webcam,Accessories,"The video is very soft and lacks sharpness.",Negative
-Mechanical Keyboard,Accessories,"The braided cable is a nice premium touch.",Positive
-LED Monitor,Electronics,"The menu buttons are confusing to use.",Neutral
-USB-C Hub,Accessories,"The hub gets worryingly hot during use.",Negative
-Ergonomic Mouse,Accessories,"The scroll wheel can switch between smooth and notched scrolling, which is very useful.",Positive
-Wireless Earbuds,Audio,"The microphone quality for calls is poor. People say I sound far away.",Negative
-Monitor Stand,Accessories,"It does what it's supposed to do. It raises the monitor.",Neutral
-External SSD,Electronics,"It comes formatted in a weird way that I had to reformat before I could use it.",Neutral
-Smartphone,Electronics,"The build quality is excellent. It feels very solid and premium.",Positive
-Tablet,Electronics,"The bezels are huge, which makes the tablet look dated.",Negative
-Wireless Mouse,Accessories,"The sensor works well on a variety of surfaces, even my glass desk.",Positive
-Gaming Headset,Audio,"The volume wheel is in a convenient and easy to reach spot.",Positive
-Laptop Sleeve,Accessories,"The magnetic closure is a nice touch instead of a zipper.",Positive
-Smartwatch,Wearables,"The always-on display is a great feature, but it drains the battery quickly.",Neutral
-Portable Charger,Accessories,"The included charging cable is flimsy and broke after a week.",Negative
-Webcam,Accessories,"The privacy cover is just a flimsy piece of plastic that feels like it will break.",Negative
-Mechanical Keyboard,Accessories,"The hot-swappable switches are a fantastic feature for enthusiasts.",Positive
-LED Monitor,Electronics,"The stand has a good range of tilt and swivel adjustments.",Positive
-USB-C Hub,Accessories,"The SD card reader is very slow. Transferring photos takes forever.",Negative
-Ergonomic Mouse,Accessories,"The mouse is too large for my small hands.",Negative
-Wireless Earbuds,Audio,"The noise isolation is decent, even without active noise cancellation.",Positive
-Monitor Stand,Accessories,"It's a stand. It holds my monitor. It's functional.",Neutral
-External SSD,Electronics,"The activity light is obnoxiously bright.",Negative
-Smartphone,Electronics,"The stereo speakers are loud and provide a good experience for videos.",Positive
-Tablet,Electronics,"The included stylus is not very accurate and feels cheap.",Negative
-Wireless Mouse,Accessories,"The setup was plug-and-play. It worked instantly.",Positive
-Gaming Headset,Audio,"The materials feel cheap and I doubt it will last long.",Negative
-Laptop Sleeve,Accessories,"The sleeve is waterproof, which saved my laptop from a spill.",Positive
-Smartwatch,Wearables,"The sleep tracking seems to be very accurate and provides useful insights.",Positive
-Portable Charger,Accessories,"The flashlight feature is a gimmick I'll never use.",Neutral
-Webcam,Accessories,"The camera's white balance is always off, making me look too blue or too orange.",Negative
-Mechanical Keyboard,Accessories,"The ergonomic split design is very comfortable once you get used to it.",Positive
-LED Monitor,Electronics,"The high refresh rate makes everything on screen look incredibly smooth.",Positive
-USB-C Hub,Accessories,"The cable is too short and stiff, making it awkward to position.",Negative
-Ergonomic Mouse,Accessories,"The customizable buttons are very useful for programming shortcuts.",Positive
-Wireless Earbuds,Audio,"They just won't stay in my ears, no matter which size of tips I use.",Negative
-Monitor Stand,Accessories,"It looks nice on my desk. The design is clean and minimal.",Positive
-External SSD,Electronics,"The rubberized exterior makes it feel more durable and less slippery.",Positive
-Smartphone,Electronics,"The fingerprint sensor is slow and inaccurate.",Negative
-Tablet,Electronics,"The performance is great for the price. A very good value.",Positive
-Wireless Mouse,Accessories,"The DPI switch is easy to press by accident, which is annoying.",Negative
-Gaming Headset,Audio,"The earcups are comfortable even when wearing glasses.",Positive
-Laptop Sleeve,Accessories,"The padding is too thin to offer much real drop protection.",Negative
-Smartwatch,Wearables,"The watch faces are boring and lack customization options.",Negative
-Portable Charger,Accessories,"The power bank failed and will no longer take a charge after 3 months.",Negative
-Webcam,Accessories,"The low light performance is better than I expected for the price.",Positive
-Mechanical Keyboard,Accessories,"The keycaps are made of high-quality PBT plastic that won't get shiny.",Positive
-LED Monitor,Electronics,"The VESA mount support is a great feature for custom setups.",Positive
-USB-C Hub,Accessories,"The hub runs cool and doesn't overheat like my old one.",Positive
-Ergonomic Mouse,Accessories,"The forward and back buttons feel mushy and cheap.",Negative
-Wireless Earbuds,Audio,"The charging case is small and compact, very easy to carry.",Positive
-Monitor Stand,Accessories,"It was very easy to assemble, took less than five minutes.",Positive
-External SSD,Electronics,"It comes with a 3-year warranty, which provides peace of mind.",Positive
-Smartphone,Electronics,"The update support from the manufacturer is terrible. It's still on an old version of the OS.",Negative
-Tablet,Electronics,"It's a good tablet for media consumption, like watching videos and reading.",Positive
-Wireless Mouse,Accessories,"The mouse goes to sleep too quickly and there's a delay when waking it up.",Negative
-Gaming Headset,Audio,"The microphone is crystal clear according to my teammates.",Positive
-Laptop Sleeve,Accessories,"It's just a fabric sleeve. It protects from scratches, and that's it.",Neutral
-Smartwatch,Wearables,"The step counter seems to be very inaccurate.",Negative
-Portable Charger,Accessories,"The ability to charge via USB-C is very convenient.",Positive
-Webcam,Accessories,"The autofocus is fast and reliable. I'm never blurry in calls.",Positive
-Mechanical Keyboard,Accessories,"The keyboard is spill-resistant, which is a great feature.",Positive
-LED Monitor,Electronics,"The power button is in a weird spot and hard to press.",Negative
-USB-C Hub,Accessories,"It's a solid hub that does what it's supposed to do without any issues.",Positive
-Ergonomic Mouse,Accessories,"The texture on the sides provides a nice, secure grip.",Positive
-Wireless Earbuds,Audio,"The battery life is not as good as advertised.",Negative
-Monitor Stand,Accessories,"The space underneath is great for storing my keyboard.",Positive
-External SSD,Electronics,"It is what it is. A small box for storing files.",Neutral
-Smartphone,Electronics,"The phone gets uncomfortably hot with basic use.",Negative
-Tablet,Electronics,"The included charger is very slow. It takes hours to charge the tablet.",Negative
-Wireless Mouse,Accessories,"The scroll wheel is silent and smooth. A pleasure to use.",Positive
-Gaming Headset,Audio,"The cable is braided and feels very durable. It doesn't tangle.",Positive
-Laptop Sleeve,Accessories,"The color faded significantly after a few months.",Negative
-Smartwatch,Wearables,"The screen is bright and easy to read, even outdoors.",Positive
-Portable Charger,Accessories,"It's heavy, but that's expected for the capacity. It feels solid.",Neutral
-Webcam,Accessories,"The mounting clip is sturdy and holds the camera securely.",Positive
-Mechanical Keyboard,Accessories,"The sound the keys make is pleasant and not too loud.",Positive
-LED Monitor,Electronics,"The power cable is very short. I needed to use an extension cord.",Negative
-USB-C Hub,Accessories,"The hub caused my laptop to crash multiple times. I don't trust it.",Negative
-Ergonomic Mouse,Accessories,"The weight is adjustable with included weights, which is a great feature.",Positive
-Wireless Earbuds,Audio,"The transparency mode works very well for hearing my surroundings.",Positive
-Monitor Stand,Accessories,"The stand is made of cheap plastic that looks like it will break.",Negative
-External SSD,Electronics,"It works fine, but it's a bit overpriced compared to the competition.",Neutral
-Smartphone,Electronics,"The lack of a headphone jack is a dealbreaker for me.",Negative
-Tablet,Electronics,"The screen is very responsive to touch.",Positive
-Wireless Mouse,Accessories,"The dongle is stored neatly inside the mouse, so it's hard to lose.",Positive
-Gaming Headset,Audio,"The headset is very uncomfortable. The clamping force is too strong.",Negative
-Laptop Sleeve,Accessories,"The fit is perfect for my laptop. Not too tight, not too loose.",Positive
-Smartwatch,Wearables,"The band is easy to change, allowing for customization.",Positive
-Portable Charger,Accessories,"It only has one output port, which is inconvenient.",Negative
-Webcam,Accessories,"The camera is plug-and-play, no drivers needed.",Positive
-Mechanical Keyboard,Accessories,"The stabilizers on the large keys are very rattly and cheap-sounding.",Negative
-LED Monitor,Electronics,"The anti-glare screen coating is very effective.",Positive
-USB-C Hub,Accessories,"The hub is compact and doesn't take up much space in my bag.",Positive
-Ergonomic Mouse,Accessories,"The shape is comfortable, but the materials feel slippery.",Negative
-Wireless Earbuds,Audio,"The battery life is excellent. The case holds multiple extra charges.",Positive
-Monitor Stand,Accessories,"It's just a piece of wood. It does the job.",Neutral
-External SSD,Electronics,"The transfer speeds are great, but the drive gets really hot.",Neutral
-Smartphone,Electronics,"The included case is a nice bonus.",Positive
-Tablet,Electronics,"The speakers are tinny and sound terrible.",Negative
-Wireless Mouse,Accessories,"It tracks perfectly on my mousepad.",Positive
-Gaming Headset,Audio,"The microphone has a useful mute indicator light.",Positive
-Laptop Sleeve,Accessories,"The sleeve doesn't offer any corner protection.",Negative
-Smartwatch,Wearables,"The screen is durable and hasn't scratched at all.",Positive
-Portable Charger,Accessories,"It's just a battery. It charges my phone.",Neutral
-Webcam,Accessories,"The image is too zoomed-in.",Negative
-Mechanical Keyboard,Accessories,"The dedicated media keys are very convenient.",Positive
-LED Monitor,Electronics,"It has a built-in USB hub which is very useful.",Positive
+Laptop Sleeve,Accessories,Average product. Meets basic expectations.,Neutral
+Gaming Headset,Audio,Uncomfortable to use for long periods.,Negative
+Wireless Mouse,Accessories,"Works fine, but a bit overpriced.",Neutral
+Smartwatch,Wearables,"It does the job, nothing extraordinary.",Neutral
+Office Chair,Furniture,"Battery lasts forever, very impressed.",Positive
+Robot Vacuum,Home Goods,"Not bad, but not great either.",Neutral
+Wireless Mouse,Accessories,Average product. Meets basic expectations.,Neutral
+Robot Vacuum,Home Goods,Sturdy and stylish. Worth every penny.,Positive
+Office Chair,Furniture,Sturdy and stylish. Worth every penny.,Positive
+Laptop Sleeve,Accessories,Charges quickly and holds a lot of power.,Positive
+Office Chair,Furniture,"Decent for the price, but there are better options.",Neutral
+Smartwatch,Wearables,A must-have for anyone. Love it!,Positive
+Laptop Sleeve,Accessories,Very disappointed. Does not work as advertised.,Negative
+Wireless Mouse,Accessories,Average product. Meets basic expectations.,Neutral
+Smartwatch,Wearables,Super comfortable and very reliable.,Positive
+Laptop Sleeve,Accessories,Absolutely love this product! Works perfectly.,Positive
+Portable Charger,Accessories,"Not bad, but not great either.",Neutral
+Gaming Headset,Audio,Charges quickly and holds a lot of power.,Positive
+Office Chair,Furniture,"Returned it immediately, not worth it.",Negative
+Gaming Headset,Audio,Sound quality is crystal clear. Fantastic purchase.,Positive
+Gaming Headset,Audio,"Gets stuck constantly, very frustrating.",Negative
+Wireless Mouse,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Action Camera,Electronics,Amazing build quality and easy to use.,Positive
+Laptop Sleeve,Accessories,"Nothing special, just a regular product.",Neutral
+Gaming Headset,Audio,A must-have for anyone. Love it!,Positive
+Robot Vacuum,Home Goods,"Battery lasts forever, very impressed.",Positive
+Smartwatch,Wearables,"Not bad, but not great either.",Neutral
+Smartwatch,Wearables,The sound is distorted and unpleasant.,Negative
+Office Chair,Furniture,"Returned it immediately, not worth it.",Negative
+Robot Vacuum,Home Goods,Sturdy and stylish. Worth every penny.,Positive
+Office Chair,Furniture,Sturdy and stylish. Worth every penny.,Positive
+Gaming Headset,Audio,"Works fine, but a bit overpriced.",Neutral
+Action Camera,Electronics,Sturdy and stylish. Worth every penny.,Positive
+Smartwatch,Wearables,Sound quality is crystal clear. Fantastic purchase.,Positive
+Wireless Mouse,Accessories,"Returned it immediately, not worth it.",Negative
+Bluetooth Speaker,Audio,Acceptable quality for everyday use.,Neutral
+Robot Vacuum,Home Goods,"Stopped working suddenly, very unreliable.",Negative
+Portable Charger,Accessories,The sound is distorted and unpleasant.,Negative
+Action Camera,Electronics,Uncomfortable to use for long periods.,Negative
+Bluetooth Speaker,Audio,"Cheap build quality, feels flimsy.",Negative
+Office Chair,Furniture,A must-have for anyone. Love it!,Positive
+Portable Charger,Accessories,Poorly designed and difficult to use.,Negative
+Laptop Sleeve,Accessories,Very disappointed. Does not work as advertised.,Negative
+Smartwatch,Wearables,"Stopped working suddenly, very unreliable.",Negative
+Electric Kettle,Kitchen,A must-have for anyone. Love it!,Positive
+Laptop Sleeve,Accessories,Sound quality is crystal clear. Fantastic purchase.,Positive
+Smartwatch,Wearables,Amazing build quality and easy to use.,Positive
+Action Camera,Electronics,"Gets stuck constantly, very frustrating.",Negative
+Smartwatch,Wearables,Uncomfortable to use for long periods.,Negative
+Smartwatch,Wearables,Absolutely love this product! Works perfectly.,Positive
+Electric Kettle,Kitchen,"Gets stuck constantly, very frustrating.",Negative
+Robot Vacuum,Home Goods,Perfect for my needs. Exceeded expectations.,Positive
+Robot Vacuum,Home Goods,Poorly designed and difficult to use.,Negative
+Smartwatch,Wearables,"Battery lasts forever, very impressed.",Positive
+Office Chair,Furniture,Amazing build quality and easy to use.,Positive
+Bluetooth Speaker,Audio,The sound is distorted and unpleasant.,Negative
+Action Camera,Electronics,Charges quickly and holds a lot of power.,Positive
+Robot Vacuum,Home Goods,"Works fine, but a bit overpriced.",Neutral
+Smartwatch,Wearables,"Battery lasts forever, very impressed.",Positive
+Smartwatch,Wearables,Great value for the price. Highly recommend.,Positive
+Bluetooth Speaker,Audio,Uncomfortable to use for long periods.,Negative
+Office Chair,Furniture,Great value for the price. Highly recommend.,Positive
+Smartwatch,Wearables,Sturdy and stylish. Worth every penny.,Positive
+Laptop Sleeve,Accessories,"It does the job, nothing extraordinary.",Neutral
+Smartwatch,Wearables,"Battery lasts forever, very impressed.",Positive
+Robot Vacuum,Home Goods,"Okay quality, but could be improved.",Neutral
+Portable Charger,Accessories,Great value for the price. Highly recommend.,Positive
+Gaming Headset,Audio,"It does the job, nothing extraordinary.",Neutral
+Bluetooth Speaker,Audio,Amazing build quality and easy to use.,Positive
+Electric Kettle,Kitchen,Sound quality is crystal clear. Fantastic purchase.,Positive
+Wireless Mouse,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Gaming Headset,Audio,"Cheap build quality, feels flimsy.",Negative
+Robot Vacuum,Home Goods,Poorly designed and difficult to use.,Negative
+Electric Kettle,Kitchen,"Nothing special, just a regular product.",Neutral
+Gaming Headset,Audio,Uncomfortable to use for long periods.,Negative
+Action Camera,Electronics,Amazing build quality and easy to use.,Positive
+Electric Kettle,Kitchen,A must-have for anyone. Love it!,Positive
+Office Chair,Furniture,Super comfortable and very reliable.,Positive
+Action Camera,Electronics,Sound quality is crystal clear. Fantastic purchase.,Positive
+Bluetooth Speaker,Audio,Satisfactory performance overall.,Neutral
+Laptop Sleeve,Accessories,Satisfactory performance overall.,Neutral
+Smartwatch,Wearables,"Cheap build quality, feels flimsy.",Negative
+Gaming Headset,Audio,Sound quality is crystal clear. Fantastic purchase.,Positive
+Office Chair,Furniture,"Nothing special, just a regular product.",Neutral
+Laptop Sleeve,Accessories,Amazing build quality and easy to use.,Positive
+Bluetooth Speaker,Audio,Poorly designed and difficult to use.,Negative
+Smartwatch,Wearables,A must-have for anyone. Love it!,Positive
+Wireless Mouse,Accessories,Battery drains way too fast. Terrible product.,Negative
+Gaming Headset,Audio,"Okay quality, but could be improved.",Neutral
+Laptop Sleeve,Accessories,Sturdy and stylish. Worth every penny.,Positive
+Smartwatch,Wearables,The sound is distorted and unpleasant.,Negative
+Portable Charger,Accessories,"Cheap build quality, feels flimsy.",Negative
+Laptop Sleeve,Accessories,Absolutely love this product! Works perfectly.,Positive
+Electric Kettle,Kitchen,"Gets the job done, but feels basic.",Neutral
+Smartwatch,Wearables,The sound is distorted and unpleasant.,Negative
+Bluetooth Speaker,Audio,Sound quality is crystal clear. Fantastic purchase.,Positive
+Robot Vacuum,Home Goods,"Decent for the price, but there are better options.",Neutral
+Smartwatch,Wearables,Super comfortable and very reliable.,Positive
+Electric Kettle,Kitchen,Satisfactory performance overall.,Neutral
+Bluetooth Speaker,Audio,Sound quality is crystal clear. Fantastic purchase.,Positive
+Action Camera,Electronics,"Returned it immediately, not worth it.",Negative
+Smartwatch,Wearables,"Okay quality, but could be improved.",Neutral
+Laptop Sleeve,Accessories,Sturdy and stylish. Worth every penny.,Positive
+Smartwatch,Wearables,Amazing build quality and easy to use.,Positive
+Action Camera,Electronics,"Cheap build quality, feels flimsy.",Negative
+Action Camera,Electronics,Absolutely love this product! Works perfectly.,Positive
+Portable Charger,Accessories,Very disappointed. Does not work as advertised.,Negative
+Laptop Sleeve,Accessories,Average product. Meets basic expectations.,Neutral
+Laptop Sleeve,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Portable Charger,Accessories,Charges quickly and holds a lot of power.,Positive
+Bluetooth Speaker,Audio,Perfect for my needs. Exceeded expectations.,Positive
+Portable Charger,Accessories,Sound quality is crystal clear. Fantastic purchase.,Positive
+Action Camera,Electronics,"Cheap build quality, feels flimsy.",Negative
+Wireless Mouse,Accessories,"Returned it immediately, not worth it.",Negative
+Wireless Mouse,Accessories,Charges quickly and holds a lot of power.,Positive
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Bluetooth Speaker,Audio,Battery drains way too fast. Terrible product.,Negative
+Wireless Mouse,Accessories,Battery drains way too fast. Terrible product.,Negative
+Gaming Headset,Audio,A must-have for anyone. Love it!,Positive
+Bluetooth Speaker,Audio,Battery drains way too fast. Terrible product.,Negative
+Electric Kettle,Kitchen,Very disappointed. Does not work as advertised.,Negative
+Portable Charger,Accessories,"Gets the job done, but feels basic.",Neutral
+Electric Kettle,Kitchen,Sound quality is crystal clear. Fantastic purchase.,Positive
+Laptop Sleeve,Accessories,"Okay quality, but could be improved.",Neutral
+Office Chair,Furniture,Satisfactory performance overall.,Neutral
+Robot Vacuum,Home Goods,Super comfortable and very reliable.,Positive
+Wireless Mouse,Accessories,Completely broke after a week. Waste of money.,Negative
+Bluetooth Speaker,Audio,Great value for the price. Highly recommend.,Positive
+Robot Vacuum,Home Goods,Sound quality is crystal clear. Fantastic purchase.,Positive
+Smartwatch,Wearables,"Decent for the price, but there are better options.",Neutral
+Electric Kettle,Kitchen,Sound quality is crystal clear. Fantastic purchase.,Positive
+Gaming Headset,Audio,Great value for the price. Highly recommend.,Positive
+Laptop Sleeve,Accessories,Sturdy and stylish. Worth every penny.,Positive
+Office Chair,Furniture,"Nothing special, just a regular product.",Neutral
+Gaming Headset,Audio,Acceptable quality for everyday use.,Neutral
+Office Chair,Furniture,"Nothing special, just a regular product.",Neutral
+Gaming Headset,Audio,"Gets the job done, but feels basic.",Neutral
+Bluetooth Speaker,Audio,"Stopped working suddenly, very unreliable.",Negative
+Laptop Sleeve,Accessories,Satisfactory performance overall.,Neutral
+Smartwatch,Wearables,"Gets stuck constantly, very frustrating.",Negative
+Gaming Headset,Audio,"Nothing special, just a regular product.",Neutral
+Electric Kettle,Kitchen,Acceptable quality for everyday use.,Neutral
+Gaming Headset,Audio,Amazing build quality and easy to use.,Positive
+Electric Kettle,Kitchen,Completely broke after a week. Waste of money.,Negative
+Laptop Sleeve,Accessories,Amazing build quality and easy to use.,Positive
+Bluetooth Speaker,Audio,"Okay quality, but could be improved.",Neutral
+Smartwatch,Wearables,Sound quality is crystal clear. Fantastic purchase.,Positive
+Electric Kettle,Kitchen,"Not bad, but not great either.",Neutral
+Gaming Headset,Audio,Amazing build quality and easy to use.,Positive
+Wireless Mouse,Accessories,Satisfactory performance overall.,Neutral
+Bluetooth Speaker,Audio,Average product. Meets basic expectations.,Neutral
+Gaming Headset,Audio,Very disappointed. Does not work as advertised.,Negative
+Bluetooth Speaker,Audio,"Cheap build quality, feels flimsy.",Negative
+Gaming Headset,Audio,"Works fine, but a bit overpriced.",Neutral
+Smartwatch,Wearables,Very disappointed. Does not work as advertised.,Negative
+Portable Charger,Accessories,"It does the job, nothing extraordinary.",Neutral
+Bluetooth Speaker,Audio,"Gets stuck constantly, very frustrating.",Negative
+Portable Charger,Accessories,"Works fine, but a bit overpriced.",Neutral
+Smartwatch,Wearables,A must-have for anyone. Love it!,Positive
+Smartwatch,Wearables,"Returned it immediately, not worth it.",Negative
+Smartwatch,Wearables,Completely broke after a week. Waste of money.,Negative
+Wireless Mouse,Accessories,"It does the job, nothing extraordinary.",Neutral
+Gaming Headset,Audio,"Nothing special, just a regular product.",Neutral
+Electric Kettle,Kitchen,Super comfortable and very reliable.,Positive
+Laptop Sleeve,Accessories,"Works fine, but a bit overpriced.",Neutral
+Robot Vacuum,Home Goods,Average product. Meets basic expectations.,Neutral
+Action Camera,Electronics,Absolutely love this product! Works perfectly.,Positive
+Robot Vacuum,Home Goods,Perfect for my needs. Exceeded expectations.,Positive
+Office Chair,Furniture,Super comfortable and very reliable.,Positive
+Office Chair,Furniture,Charges quickly and holds a lot of power.,Positive
+Bluetooth Speaker,Audio,Completely broke after a week. Waste of money.,Negative
+Bluetooth Speaker,Audio,"Returned it immediately, not worth it.",Negative
+Smartwatch,Wearables,"Battery lasts forever, very impressed.",Positive
+Wireless Mouse,Accessories,A must-have for anyone. Love it!,Positive
+Laptop Sleeve,Accessories,Sturdy and stylish. Worth every penny.,Positive
+Gaming Headset,Audio,A must-have for anyone. Love it!,Positive
+Office Chair,Furniture,Acceptable quality for everyday use.,Neutral
+Smartwatch,Wearables,Absolutely love this product! Works perfectly.,Positive
+Action Camera,Electronics,Very disappointed. Does not work as advertised.,Negative
+Portable Charger,Accessories,"Works fine, but a bit overpriced.",Neutral
+Robot Vacuum,Home Goods,Satisfactory performance overall.,Neutral
+Gaming Headset,Audio,"Stopped working suddenly, very unreliable.",Negative
+Laptop Sleeve,Accessories,Absolutely love this product! Works perfectly.,Positive
+Bluetooth Speaker,Audio,"Gets stuck constantly, very frustrating.",Negative
+Bluetooth Speaker,Audio,Absolutely love this product! Works perfectly.,Positive
+Wireless Mouse,Accessories,Satisfactory performance overall.,Neutral
+Bluetooth Speaker,Audio,A must-have for anyone. Love it!,Positive
+Wireless Mouse,Accessories,Completely broke after a week. Waste of money.,Negative
+Wireless Mouse,Accessories,Great value for the price. Highly recommend.,Positive
+Smartwatch,Wearables,Uncomfortable to use for long periods.,Negative
+Smartwatch,Wearables,Battery drains way too fast. Terrible product.,Negative
+Action Camera,Electronics,Average product. Meets basic expectations.,Neutral
+Action Camera,Electronics,"Gets the job done, but feels basic.",Neutral
+Smartwatch,Wearables,"Gets stuck constantly, very frustrating.",Negative
+Laptop Sleeve,Accessories,Super comfortable and very reliable.,Positive
+Office Chair,Furniture,Poorly designed and difficult to use.,Negative
+Portable Charger,Accessories,"Nothing special, just a regular product.",Neutral
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Laptop Sleeve,Accessories,Amazing build quality and easy to use.,Positive
+Gaming Headset,Audio,Perfect for my needs. Exceeded expectations.,Positive
+Office Chair,Furniture,Uncomfortable to use for long periods.,Negative
+Office Chair,Furniture,Very disappointed. Does not work as advertised.,Negative
+Laptop Sleeve,Accessories,Poorly designed and difficult to use.,Negative
+Wireless Mouse,Accessories,"Nothing special, just a regular product.",Neutral
+Action Camera,Electronics,Average product. Meets basic expectations.,Neutral
+Action Camera,Electronics,Perfect for my needs. Exceeded expectations.,Positive
+Smartwatch,Wearables,The sound is distorted and unpleasant.,Negative
+Smartwatch,Wearables,Great value for the price. Highly recommend.,Positive
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Robot Vacuum,Home Goods,"Works fine, but a bit overpriced.",Neutral
+Portable Charger,Accessories,"Not bad, but not great either.",Neutral
+Bluetooth Speaker,Audio,Amazing build quality and easy to use.,Positive
+Laptop Sleeve,Accessories,Absolutely love this product! Works perfectly.,Positive
+Robot Vacuum,Home Goods,"It does the job, nothing extraordinary.",Neutral
+Action Camera,Electronics,Sturdy and stylish. Worth every penny.,Positive
+Electric Kettle,Kitchen,"It does the job, nothing extraordinary.",Neutral
+Electric Kettle,Kitchen,Sturdy and stylish. Worth every penny.,Positive
+Robot Vacuum,Home Goods,Absolutely love this product! Works perfectly.,Positive
+Laptop Sleeve,Accessories,Satisfactory performance overall.,Neutral
+Office Chair,Furniture,"Nothing special, just a regular product.",Neutral
+Office Chair,Furniture,Satisfactory performance overall.,Neutral
+Office Chair,Furniture,Sturdy and stylish. Worth every penny.,Positive
+Portable Charger,Accessories,Absolutely love this product! Works perfectly.,Positive
+Action Camera,Electronics,"Not bad, but not great either.",Neutral
+Portable Charger,Accessories,Uncomfortable to use for long periods.,Negative
+Laptop Sleeve,Accessories,Charges quickly and holds a lot of power.,Positive
+Office Chair,Furniture,"Nothing special, just a regular product.",Neutral
+Gaming Headset,Audio,Average product. Meets basic expectations.,Neutral
+Office Chair,Furniture,"It does the job, nothing extraordinary.",Neutral
+Gaming Headset,Audio,Perfect for my needs. Exceeded expectations.,Positive
+Robot Vacuum,Home Goods,"Decent for the price, but there are better options.",Neutral
+Laptop Sleeve,Accessories,Absolutely love this product! Works perfectly.,Positive
+Office Chair,Furniture,Completely broke after a week. Waste of money.,Negative
+Wireless Mouse,Accessories,"Works fine, but a bit overpriced.",Neutral
+Office Chair,Furniture,"Okay quality, but could be improved.",Neutral
+Office Chair,Furniture,Super comfortable and very reliable.,Positive
+Gaming Headset,Audio,Charges quickly and holds a lot of power.,Positive
+Bluetooth Speaker,Audio,"Works fine, but a bit overpriced.",Neutral
+Gaming Headset,Audio,Great value for the price. Highly recommend.,Positive
+Gaming Headset,Audio,The sound is distorted and unpleasant.,Negative
+Electric Kettle,Kitchen,Acceptable quality for everyday use.,Neutral
+Robot Vacuum,Home Goods,"Gets the job done, but feels basic.",Neutral
+Smartwatch,Wearables,A must-have for anyone. Love it!,Positive
+Gaming Headset,Audio,"Gets stuck constantly, very frustrating.",Negative
+Gaming Headset,Audio,Sturdy and stylish. Worth every penny.,Positive
+Action Camera,Electronics,"Returned it immediately, not worth it.",Negative
+Laptop Sleeve,Accessories,"Not bad, but not great either.",Neutral
+Electric Kettle,Kitchen,Great value for the price. Highly recommend.,Positive
+Smartwatch,Wearables,Satisfactory performance overall.,Neutral
+Gaming Headset,Audio,The sound is distorted and unpleasant.,Negative
+Action Camera,Electronics,"Okay quality, but could be improved.",Neutral
+Action Camera,Electronics,"Nothing special, just a regular product.",Neutral
+Office Chair,Furniture,Super comfortable and very reliable.,Positive
+Laptop Sleeve,Accessories,"Gets stuck constantly, very frustrating.",Negative
+Portable Charger,Accessories,Poorly designed and difficult to use.,Negative
+Bluetooth Speaker,Audio,Sturdy and stylish. Worth every penny.,Positive
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Smartwatch,Wearables,"Not bad, but not great either.",Neutral
+Portable Charger,Accessories,"It does the job, nothing extraordinary.",Neutral
+Portable Charger,Accessories,A must-have for anyone. Love it!,Positive
+Gaming Headset,Audio,Poorly designed and difficult to use.,Negative
+Portable Charger,Accessories,Charges quickly and holds a lot of power.,Positive
+Bluetooth Speaker,Audio,Absolutely love this product! Works perfectly.,Positive
+Smartwatch,Wearables,Satisfactory performance overall.,Neutral
+Electric Kettle,Kitchen,The sound is distorted and unpleasant.,Negative
+Portable Charger,Accessories,Acceptable quality for everyday use.,Neutral
+Portable Charger,Accessories,Very disappointed. Does not work as advertised.,Negative
+Smartwatch,Wearables,Absolutely love this product! Works perfectly.,Positive
+Smartwatch,Wearables,Sound quality is crystal clear. Fantastic purchase.,Positive
+Gaming Headset,Audio,"Not bad, but not great either.",Neutral
+Bluetooth Speaker,Audio,"Nothing special, just a regular product.",Neutral
+Action Camera,Electronics,"Gets stuck constantly, very frustrating.",Negative
+Robot Vacuum,Home Goods,Uncomfortable to use for long periods.,Negative
+Electric Kettle,Kitchen,Absolutely love this product! Works perfectly.,Positive
+Laptop Sleeve,Accessories,Very disappointed. Does not work as advertised.,Negative
+Wireless Mouse,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Gaming Headset,Audio,Sound quality is crystal clear. Fantastic purchase.,Positive
+Portable Charger,Accessories,Uncomfortable to use for long periods.,Negative
+Smartwatch,Wearables,Very disappointed. Does not work as advertised.,Negative
+Action Camera,Electronics,Perfect for my needs. Exceeded expectations.,Positive
+Robot Vacuum,Home Goods,Charges quickly and holds a lot of power.,Positive
+Wireless Mouse,Accessories,Very disappointed. Does not work as advertised.,Negative
+Smartwatch,Wearables,"Cheap build quality, feels flimsy.",Negative
+Wireless Mouse,Accessories,"Returned it immediately, not worth it.",Negative
+Gaming Headset,Audio,Amazing build quality and easy to use.,Positive
+Portable Charger,Accessories,"Not bad, but not great either.",Neutral
+Action Camera,Electronics,"Nothing special, just a regular product.",Neutral
+Smartwatch,Wearables,Super comfortable and very reliable.,Positive
+Portable Charger,Accessories,"Works fine, but a bit overpriced.",Neutral
+Smartwatch,Wearables,"Okay quality, but could be improved.",Neutral
+Portable Charger,Accessories,A must-have for anyone. Love it!,Positive
+Laptop Sleeve,Accessories,Battery drains way too fast. Terrible product.,Negative
+Gaming Headset,Audio,"Cheap build quality, feels flimsy.",Negative
+Bluetooth Speaker,Audio,"Battery lasts forever, very impressed.",Positive
+Wireless Mouse,Accessories,Satisfactory performance overall.,Neutral
+Office Chair,Furniture,Charges quickly and holds a lot of power.,Positive
+Office Chair,Furniture,Battery drains way too fast. Terrible product.,Negative
+Office Chair,Furniture,Poorly designed and difficult to use.,Negative
+Gaming Headset,Audio,Charges quickly and holds a lot of power.,Positive
+Office Chair,Furniture,"Works fine, but a bit overpriced.",Neutral
+Laptop Sleeve,Accessories,Uncomfortable to use for long periods.,Negative
+Portable Charger,Accessories,Completely broke after a week. Waste of money.,Negative
+Laptop Sleeve,Accessories,A must-have for anyone. Love it!,Positive
+Laptop Sleeve,Accessories,"Not bad, but not great either.",Neutral
+Wireless Mouse,Accessories,Great value for the price. Highly recommend.,Positive
+Electric Kettle,Kitchen,"Okay quality, but could be improved.",Neutral
+Action Camera,Electronics,Satisfactory performance overall.,Neutral
+Robot Vacuum,Home Goods,Satisfactory performance overall.,Neutral
+Office Chair,Furniture,"Works fine, but a bit overpriced.",Neutral
+Smartwatch,Wearables,Sturdy and stylish. Worth every penny.,Positive
+Electric Kettle,Kitchen,"Decent for the price, but there are better options.",Neutral
+Office Chair,Furniture,"Cheap build quality, feels flimsy.",Negative
+Wireless Mouse,Accessories,Battery drains way too fast. Terrible product.,Negative
+Action Camera,Electronics,"Nothing special, just a regular product.",Neutral
+Office Chair,Furniture,Sturdy and stylish. Worth every penny.,Positive
+Office Chair,Furniture,Poorly designed and difficult to use.,Negative
+Bluetooth Speaker,Audio,"It does the job, nothing extraordinary.",Neutral
+Office Chair,Furniture,Absolutely love this product! Works perfectly.,Positive
+Gaming Headset,Audio,"Works fine, but a bit overpriced.",Neutral
+Bluetooth Speaker,Audio,Average product. Meets basic expectations.,Neutral
+Gaming Headset,Audio,"Decent for the price, but there are better options.",Neutral
+Wireless Mouse,Accessories,Poorly designed and difficult to use.,Negative
+Bluetooth Speaker,Audio,Uncomfortable to use for long periods.,Negative
+Smartwatch,Wearables,Acceptable quality for everyday use.,Neutral
+Office Chair,Furniture,"Returned it immediately, not worth it.",Negative
+Laptop Sleeve,Accessories,The sound is distorted and unpleasant.,Negative
+Laptop Sleeve,Accessories,Super comfortable and very reliable.,Positive
+Smartwatch,Wearables,Sound quality is crystal clear. Fantastic purchase.,Positive
+Wireless Mouse,Accessories,Completely broke after a week. Waste of money.,Negative
+Wireless Mouse,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Bluetooth Speaker,Audio,Acceptable quality for everyday use.,Neutral
+Smartwatch,Wearables,Absolutely love this product! Works perfectly.,Positive
+Wireless Mouse,Accessories,"Works fine, but a bit overpriced.",Neutral
+Electric Kettle,Kitchen,"Works fine, but a bit overpriced.",Neutral
+Laptop Sleeve,Accessories,Acceptable quality for everyday use.,Neutral
+Wireless Mouse,Accessories,The sound is distorted and unpleasant.,Negative
+Wireless Mouse,Accessories,"Not bad, but not great either.",Neutral
+Office Chair,Furniture,"Gets the job done, but feels basic.",Neutral
+Laptop Sleeve,Accessories,Perfect for my needs. Exceeded expectations.,Positive
+Laptop Sleeve,Accessories,Very disappointed. Does not work as advertised.,Negative
+Electric Kettle,Kitchen,"It does the job, nothing extraordinary.",Neutral
+Bluetooth Speaker,Audio,Perfect for my needs. Exceeded expectations.,Positive
+Smartwatch,Wearables,"Decent for the price, but there are better options.",Neutral
+Smartwatch,Wearables,"Nothing special, just a regular product.",Neutral
+Portable Charger,Accessories,Poorly designed and difficult to use.,Negative
+Robot Vacuum,Home Goods,A must-have for anyone. Love it!,Positive
+Electric Kettle,Kitchen,"It does the job, nothing extraordinary.",Neutral
+Portable Charger,Accessories,Average product. Meets basic expectations.,Neutral
+Office Chair,Furniture,Uncomfortable to use for long periods.,Negative
+Electric Kettle,Kitchen,"Decent for the price, but there are better options.",Neutral
+Bluetooth Speaker,Audio,"Okay quality, but could be improved.",Neutral
+Gaming Headset,Audio,"Gets stuck constantly, very frustrating.",Negative
+Wireless Mouse,Accessories,"Not bad, but not great either.",Neutral
+Portable Charger,Accessories,Amazing build quality and easy to use.,Positive
+Action Camera,Electronics,A must-have for anyone. Love it!,Positive
+Electric Kettle,Kitchen,"Battery lasts forever, very impressed.",Positive
+Office Chair,Furniture,Super comfortable and very reliable.,Positive
+Bluetooth Speaker,Audio,"Okay quality, but could be improved.",Neutral
+Robot Vacuum,Home Goods,Absolutely love this product! Works perfectly.,Positive
+Smartwatch,Wearables,"Returned it immediately, not worth it.",Negative
+Bluetooth Speaker,Audio,Average product. Meets basic expectations.,Neutral
+Smartwatch,Wearables,"Cheap build quality, feels flimsy.",Negative
+Bluetooth Speaker,Audio,Acceptable quality for everyday use.,Neutral
+Gaming Headset,Audio,Battery drains way too fast. Terrible product.,Negative
+Action Camera,Electronics,Charges quickly and holds a lot of power.,Positive
+Laptop Sleeve,Accessories,"Nothing special, just a regular product.",Neutral
+Wireless Mouse,Accessories,Sturdy and stylish. Worth every penny.,Positive
+Gaming Headset,Audio,Sound quality is crystal clear. Fantastic purchase.,Positive
+Bluetooth Speaker,Audio,Uncomfortable to use for long periods.,Negative
+Laptop Sleeve,Accessories,Uncomfortable to use for long periods.,Negative
+Bluetooth Speaker,Audio,"Gets the job done, but feels basic.",Neutral
+Gaming Headset,Audio,Super comfortable and very reliable.,Positive
+Office Chair,Furniture,Poorly designed and difficult to use.,Negative
+Laptop Sleeve,Accessories,Super comfortable and very reliable.,Positive
+Action Camera,Electronics,"Nothing special, just a regular product.",Neutral
+Portable Charger,Accessories,Average product. Meets basic expectations.,Neutral
+Laptop Sleeve,Accessories,The sound is distorted and unpleasant.,Negative
+Office Chair,Furniture,"Gets stuck constantly, very frustrating.",Negative
+Bluetooth Speaker,Audio,Absolutely love this product! Works perfectly.,Positive
+Bluetooth Speaker,Audio,"Works fine, but a bit overpriced.",Neutral
+Wireless Mouse,Accessories,"Returned it immediately, not worth it.",Negative
+Wireless Mouse,Accessories,Average product. Meets basic expectations.,Neutral
+Laptop Sleeve,Accessories,Uncomfortable to use for long periods.,Negative
+Bluetooth Speaker,Audio,"Battery lasts forever, very impressed.",Positive
+Action Camera,Electronics,Amazing build quality and easy to use.,Positive
+Portable Charger,Accessories,Charges quickly and holds a lot of power.,Positive
+Wireless Mouse,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Electric Kettle,Kitchen,Completely broke after a week. Waste of money.,Negative
+Bluetooth Speaker,Audio,Poorly designed and difficult to use.,Negative
+Robot Vacuum,Home Goods,"Okay quality, but could be improved.",Neutral
+Laptop Sleeve,Accessories,Satisfactory performance overall.,Neutral
+Gaming Headset,Audio,"Works fine, but a bit overpriced.",Neutral
+Wireless Mouse,Accessories,"Stopped working suddenly, very unreliable.",Negative
+Action Camera,Electronics,Satisfactory performance overall.,Neutral
+Wireless Mouse,Accessories,"Nothing special, just a regular product.",Neutral
+Smartwatch,Wearables,Battery drains way too fast. Terrible product.,Negative
+Smartwatch,Wearables,"Battery lasts forever, very impressed.",Positive
+Portable Charger,Accessories,Super comfortable and very reliable.,Positive
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Office Chair,Furniture,"Gets the job done, but feels basic.",Neutral
+Robot Vacuum,Home Goods,Completely broke after a week. Waste of money.,Negative
+Laptop Sleeve,Accessories,"Decent for the price, but there are better options.",Neutral
+Wireless Mouse,Accessories,Sound quality is crystal clear. Fantastic purchase.,Positive
+Portable Charger,Accessories,"Gets the job done, but feels basic.",Neutral
+Action Camera,Electronics,Perfect for my needs. Exceeded expectations.,Positive
+Bluetooth Speaker,Audio,Average product. Meets basic expectations.,Neutral
+Action Camera,Electronics,Average product. Meets basic expectations.,Neutral
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Office Chair,Furniture,"Gets the job done, but feels basic.",Neutral
+Wireless Mouse,Accessories,The sound is distorted and unpleasant.,Negative
+Wireless Mouse,Accessories,"Decent for the price, but there are better options.",Neutral
+Robot Vacuum,Home Goods,"Stopped working suddenly, very unreliable.",Negative
+Bluetooth Speaker,Audio,The sound is distorted and unpleasant.,Negative
+Electric Kettle,Kitchen,Amazing build quality and easy to use.,Positive
+Action Camera,Electronics,Sound quality is crystal clear. Fantastic purchase.,Positive
+Smartwatch,Wearables,A must-have for anyone. Love it!,Positive
+Smartwatch,Wearables,"Gets the job done, but feels basic.",Neutral
+Wireless Mouse,Accessories,"Gets the job done, but feels basic.",Neutral
+Action Camera,Electronics,Completely broke after a week. Waste of money.,Negative
+Laptop Sleeve,Accessories,Acceptable quality for everyday use.,Neutral
+Bluetooth Speaker,Audio,Charges quickly and holds a lot of power.,Positive
+Laptop Sleeve,Accessories,Sturdy and stylish. Worth every penny.,Positive
+Action Camera,Electronics,"Cheap build quality, feels flimsy.",Negative
+Wireless Mouse,Accessories,A must-have for anyone. Love it!,Positive
+Action Camera,Electronics,Poorly designed and difficult to use.,Negative
+Portable Charger,Accessories,Battery drains way too fast. Terrible product.,Negative
+Office Chair,Furniture,"Not bad, but not great either.",Neutral
+Action Camera,Electronics,A must-have for anyone. Love it!,Positive
+Gaming Headset,Audio,Acceptable quality for everyday use.,Neutral
+Laptop Sleeve,Accessories,The sound is distorted and unpleasant.,Negative
+Bluetooth Speaker,Audio,A must-have for anyone. Love it!,Positive
+Smartwatch,Wearables,Very disappointed. Does not work as advertised.,Negative
+Electric Kettle,Kitchen,Absolutely love this product! Works perfectly.,Positive
+Smartwatch,Wearables,Satisfactory performance overall.,Neutral
+Action Camera,Electronics,"Nothing special, just a regular product.",Neutral
+Smartwatch,Wearables,Completely broke after a week. Waste of money.,Negative
+Portable Charger,Accessories,Perfect for my needs. Exceeded expectations.,Positive
+Electric Kettle,Kitchen,Battery drains way too fast. Terrible product.,Negative
+Gaming Headset,Audio,"Gets stuck constantly, very frustrating.",Negative
+Smartwatch,Wearables,Charges quickly and holds a lot of power.,Positive
+Office Chair,Furniture,Battery drains way too fast. Terrible product.,Negative
+Laptop Sleeve,Accessories,A must-have for anyone. Love it!,Positive
+Gaming Headset,Audio,Sturdy and stylish. Worth every penny.,Positive
+Electric Kettle,Kitchen,Super comfortable and very reliable.,Positive
+Action Camera,Electronics,"Stopped working suddenly, very unreliable.",Negative
+Wireless Mouse,Accessories,Perfect for my needs. Exceeded expectations.,Positive
+Action Camera,Electronics,Sound quality is crystal clear. Fantastic purchase.,Positive
+Electric Kettle,Kitchen,The sound is distorted and unpleasant.,Negative
+Wireless Mouse,Accessories,"Not bad, but not great either.",Neutral
+Action Camera,Electronics,Sound quality is crystal clear. Fantastic purchase.,Positive
