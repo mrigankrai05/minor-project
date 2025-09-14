@@ -44,7 +44,6 @@ def train_model():
     global vectorizer, model
     try:
         df_train = pd.read_csv('training_data.csv')
-        # --- FIX: Drop rows with empty 'review' or 'sentiment' to prevent NaN errors ---
         df_train.dropna(subset=['review', 'sentiment'], inplace=True)
         
         if 'sentiment' not in df_train.columns:
@@ -113,6 +112,89 @@ def generate_category_performance_chart(df):
     ax.set_ylabel('Total Net Profit ($)')
     plt.xticks(rotation=45, ha='right')
     return fig_to_base64(fig)
+
+# --- New Strategic Insight Functions ---
+def generate_profitability_popularity_chart(df):
+    if df.empty or 'product_category' not in df.columns:
+        return ""
+    
+    category_analysis = df.groupby('product_category').agg(
+        total_profit=pd.NamedAgg(column='net_profit', aggfunc='sum'),
+        total_units_sold=pd.NamedAgg(column='units_sold', aggfunc='sum')
+    ).reset_index()
+
+    category_analysis = category_analysis[category_analysis['total_units_sold'] > 0]
+    if category_analysis.empty:
+        return ""
+        
+    category_analysis['profit_per_unit'] = category_analysis['total_profit'] / category_analysis['total_units_sold']
+
+    median_profit_per_unit = category_analysis['profit_per_unit'].median()
+    median_units_sold = category_analysis['total_units_sold'].median()
+
+    fig, ax = plt.subplots(figsize=(9, 6), dpi=100)
+    sns.scatterplot(
+        data=category_analysis, x='total_units_sold', y='profit_per_unit',
+        hue='product_category', size='total_profit', sizes=(100, 1000),
+        ax=ax, legend=True, palette='viridis'
+    )
+    
+    ax.axhline(median_profit_per_unit, color='grey', linestyle='--')
+    ax.axvline(median_units_sold, color='grey', linestyle='--')
+    
+    plt.title('Profitability vs. Popularity Quadrant', pad=20, fontweight='bold')
+    ax.set_xlabel('Total Units Sold (Popularity)')
+    ax.set_ylabel('Average Profit per Unit (Profitability)')
+    ax.legend(title='Product Category', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+    ax.text(ax.get_xlim()[1], median_profit_per_unit, ' High Margin', va='bottom', ha='right', color='grey')
+    ax.text(ax.get_xlim()[1], median_profit_per_unit, ' Low Margin', va='top', ha='right', color='grey')
+    ax.text(median_units_sold, ax.get_ylim()[1], ' Niche', ha='right', va='top', rotation=90, color='grey')
+    ax.text(median_units_sold, ax.get_ylim()[1], ' Mass Market', ha='left', va='top', rotation=90, color='grey')
+
+    return fig_to_base64(fig)
+
+def generate_recommendations(df):
+    if df.empty: return {}
+
+    # 1. Category Quadrant Analysis
+    category_analysis = df.groupby('product_category').agg(
+        total_profit=('net_profit', 'sum'),
+        total_units_sold=('units_sold', 'sum')
+    ).reset_index()
+    category_analysis = category_analysis[category_analysis['total_units_sold'] > 0]
+    
+    recommendations = {}
+    
+    if not category_analysis.empty:
+        category_analysis['profit_per_unit'] = category_analysis['total_profit'] / category_analysis['total_units_sold']
+        median_profit = category_analysis['profit_per_unit'].median()
+        median_sales = category_analysis['total_units_sold'].median()
+        
+        high_potential = category_analysis[(category_analysis['profit_per_unit'] > median_profit) & (category_analysis['total_units_sold'] < median_sales)]
+        if not high_potential.empty:
+            focus_cat = high_potential.sort_values('profit_per_unit', ascending=False).iloc[0]
+            recommendations['focus_on'] = f"Focus marketing on '{focus_cat['product_category']}'. It has a high profit margin (${focus_cat['profit_per_unit']:.2f}/unit) but low sales volume. Increasing its popularity could significantly boost overall profit."
+
+        cash_cows = category_analysis[(category_analysis['profit_per_unit'] < median_profit) & (category_analysis['total_units_sold'] > median_sales)]
+        if not cash_cows.empty:
+            optimize_cat = cash_cows.sort_values('total_units_sold', ascending=False).iloc[0]
+            recommendations['optimize'] = f"'{optimize_cat['product_category']}' is a 'cash cow' with high sales but low margins (${optimize_cat['profit_per_unit']:.2f}/unit). Explore ways to reduce costs or bundle with higher-margin products."
+
+    # 2. Product Level Analysis
+    product_performance = df.groupby('product_name').agg(
+        total_profit=('net_profit', 'sum'),
+        avg_rating=('rating', 'mean')
+    ).reset_index()
+    
+    if not product_performance.empty:
+        best_product = product_performance.sort_values('total_profit', ascending=False).iloc[0]
+        worst_product = product_performance[product_performance['avg_rating'] < 3].sort_values('total_profit').iloc[0] if not product_performance[product_performance['avg_rating'] < 3].empty else product_performance.sort_values('total_profit').iloc[0]
+        
+        recommendations['promote'] = f"Promote '{best_product['product_name']}'. It's your most profitable product, generating ${best_product['total_profit']:,.2f} in total profit."
+        recommendations['investigate'] = f"Investigate '{worst_product['product_name']}'. It has a low average rating ({worst_product['avg_rating']:.1f}/5) and low profit. Check negative reviews for recurring issues."
+
+    return recommendations
 
 # --- Forecasting Functions ---
 def generate_forecast_chart(df, value_col, title, y_label):
@@ -219,7 +301,7 @@ def analyze_data():
         if not all(col in df_user.columns for col in required_cols):
             return jsonify({'error': f'CSV is missing required columns. It must contain: {", ".join(required_cols)}'}), 400
         
-        df_user['purchase_date'] = pd.to_datetime(df_user['purchase_date'], errors='coerce', dayfirst=True)
+        df_user['purchase_date'] = pd.to_datetime(df_user['purchase_date'], errors='coerce', dayfirst=False)
         df_user['rating'] = pd.to_numeric(df_user['rating'], errors='coerce')
         df_user.dropna(subset=['purchase_date', 'rating', 'review'], inplace=True)
         
@@ -280,12 +362,15 @@ def analyze_data():
             'sales_region': generate_sales_by_region_chart(df_user),
             'rating_sentiment': generate_rating_sentiment_heatmap(df_user),
             'category_performance': generate_category_performance_chart(df_user),
+            'profit_popularity': generate_profitability_popularity_chart(df_user),
             'profit_forecast': profit_forecast_chart,
             'sales_forecast': sales_forecast_chart,
             'sentiment_trend': sentiment_trend_chart
         }
+
+        recommendations = generate_recommendations(df_user)
         
-        return jsonify({'charts': charts, 'trends': trends, 'summary_stats': summary_stats})
+        return jsonify({'charts': charts, 'trends': trends, 'summary_stats': summary_stats, 'recommendations': recommendations})
 
     except Exception as e:
         print(f"An error occurred during analysis: {e}")
